@@ -1,0 +1,19 @@
+data/employees.csv
+  s_d3eed08c3ef1c8::t_b8ce55cea8df2f 1-43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "3fe4a1ef9d88767b5cc505b963cf36d5de13edb2",
+  "prompts": {},
+  "sessions": {
+    "s_d3eed08c3ef1c8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "247f4f01-e081-4cd7-b355-0ce117d45963",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "emmver <emmvereroudakis@gmail.com>"
+    }
+  }
+}

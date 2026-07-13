@@ -1,3 +1,2 @@
-# docglow build artifacts (not needed in repo)
-.docglow-column-lineage-cache.json
-.docglow-column-lineage-failures.log
+# Frontend build artifacts - committed for PyPI packaging
+# Rebuild with: cd frontend && npm run build && cp -r dist/* ../src/docglow/static/

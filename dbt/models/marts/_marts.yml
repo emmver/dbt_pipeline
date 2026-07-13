@@ -4,60 +4,61 @@ version: 2
 # PK enforced at build time by DuckDB primary_key constraints (idempotent).
 # FK enforced by the pipeline (int filter) + relationships tests (detection) —
 # a DB foreign_key constraint breaks DuckDB re-runs (dbt-duckdb #425).
-# Soft/review columns get NO not_null constraint (would hard-fail the build on
-# kept review rows) — they rely on warn-severity source tests instead.
+# Nullable attribute columns get NO not_null constraint — they rely on
+# warn-severity source tests instead, so kept rows with missing attributes do
+# not hard-fail the build.
 
 models:
   - name: dim_projects
-    description: "Clean project dimension: one row per project_id from stg_projects (the dedup survivors). Soft-issue rows (null name P013, null/invalid budget P008/P032/P019) are retained since the id is valid. Negative budget is nullified here. Contracted; project_id is a DB-enforced primary key and the FK target for fct_timesheets."
+    description: "Project dimension. One row per project_id, drawn from the deduplicated staging survivors. Contracted; project_id is a database-enforced primary key and the foreign-key target for fct_timesheets."
     config:
       contract:
         enforced: true
     columns:
       - name: project_id
         data_type: varchar
-        description: "Project PK (DB-enforced primary key). One row per project_id (35 rows)."
+        description: "Project primary key (DB-enforced)."
         constraints:
           - type: primary_key
       - name: project_name
         data_type: varchar
-        description: "Project name; nullable (NULL for P013 — review row kept)."
+        description: "Project name; nullable."
       - name: budget
         data_type: decimal(12,2)
-        description: "Project budget as decimal(12,2); NULL for P008 (non-numeric source), P019 (negative, nullified), P032 (null source). Review rows kept with NULL budget."
+        description: "Project budget as decimal(12,2); nullable."
 
   - name: dim_employees
-    description: "Clean employee dimension: one row per employee_id from stg_employees (the dedup survivors). Soft-issue rows (null name E013, null role E021) are retained since the id is valid. Contracted; employee_id is a DB-enforced primary key and the FK target for fct_timesheets."
+    description: "Employee dimension. One row per employee_id, drawn from the deduplicated staging survivors. Contracted; employee_id is a database-enforced primary key and the foreign-key target for fct_timesheets."
     config:
       contract:
         enforced: true
     columns:
       - name: employee_id
         data_type: varchar
-        description: "Employee PK (DB-enforced primary key). One row per employee_id (40 rows)."
+        description: "Employee primary key (DB-enforced)."
         constraints:
           - type: primary_key
       - name: name
         data_type: varchar
-        description: "Employee name; nullable (NULL for E013 — review row kept)."
+        description: "Employee name; nullable."
       - name: role
         data_type: varchar
-        description: "Employee role; nullable (NULL for E021 — review row kept). One of 8 valid roles (accepted_values source test)."
+        description: "Employee role; nullable. One of a fixed set of valid roles."
 
   - name: fct_timesheets
-    description: "Clean timesheets fact mart: the accepted fact set from int_timesheets_validated left-joined to dim_employees and dim_projects. Pure join, no filters — int already removed dangling FKs and single-source rejects, so the grain is clean (one row per timesheet_id). timesheet_id is a DB-enforced primary key; employee_id / project_id FK integrity is enforced upstream by int_timesheets_validated (prevention) and asserted here by relationships tests (detection)."
+    description: "Timesheets fact table: the accepted fact set joined to dim_employees and dim_projects with dimension attributes denormalized for query convenience. One row per timesheet_id. Primary key enforced by the database; foreign-key integrity is enforced upstream by int_timesheets_validated and asserted here by relationships tests."
     config:
       contract:
         enforced: true
     columns:
       - name: timesheet_id
         data_type: varchar
-        description: "Fact PK (DB-enforced primary key). Deterministic md5 surrogate of the natural key (employee_id|project_id|date|hours). One row per accepted timesheet (331 rows)."
+        description: "Fact primary key (DB-enforced). Deterministic md5 surrogate of the natural key (employee_id, project_id, date, hours)."
         constraints:
           - type: primary_key
       - name: employee_id
         data_type: varchar
-        description: "Employee FK → dim_employees.employee_id. Guaranteed valid (dangling rows filtered in int_timesheets_validated). Asserted by relationships test."
+        description: "Employee foreign key → dim_employees.employee_id."
         tests:
           - relationships:
               arguments:
@@ -65,13 +66,13 @@ models:
                 field: employee_id
       - name: employee_name
         data_type: varchar
-        description: "Denormalized employee name from dim_employees (for query convenience)."
+        description: "Denormalized employee name (from dim_employees)."
       - name: employee_role
         data_type: varchar
-        description: "Denormalized employee role from dim_employees (for query convenience)."
+        description: "Denormalized employee role (from dim_employees)."
       - name: project_id
         data_type: varchar
-        description: "Project FK → dim_projects.project_id. Guaranteed valid (dangling rows filtered in int_timesheets_validated). Asserted by relationships test."
+        description: "Project foreign key → dim_projects.project_id."
         tests:
           - relationships:
               arguments:
@@ -79,26 +80,26 @@ models:
                 field: project_id
       - name: project_name
         data_type: varchar
-        description: "Denormalized project name from dim_projects (for query convenience)."
+        description: "Denormalized project name (from dim_projects)."
       - name: project_budget
         data_type: decimal(12,2)
-        description: "Denormalized project budget from dim_projects (for query convenience). NULL for review projects."
+        description: "Denormalized project budget (from dim_projects); nullable."
       - name: date
         data_type: date
-        description: "Timesheet date; non-null (bad dates removed in staging). Parsed from 3 source formats (ISO / dd/mm/yyyy / dd-Mon-yy)."
+        description: "Timesheet date; non-null. Parsed from multiple source formats."
       - name: hours
         data_type: decimal(5,2)
-        description: "Hours worked; non-null, in range (0, 24] (non-numeric and out-of-range removed in staging)."
+        description: "Hours worked; non-null, in range (0, 24]."
 
   - name: agg_hours_per_project
-    description: "Total hours per project from the clean fact mart. project_id is a DB-enforced primary key (the aggregation grain); total_hours is NOT NULL by construction."
+    description: "Per-project rollup of logged hours from the clean fact table. project_id is a database-enforced primary key (the aggregation grain)."
     config:
       contract:
         enforced: true
     columns:
       - name: project_id
         data_type: varchar
-        description: "Project PK (DB-enforced). One row per project that has timesheets (21 rows)."
+        description: "Project primary key (DB-enforced)."
         constraints:
           - type: primary_key
       - name: project_name
@@ -106,10 +107,10 @@ models:
         description: "Project name (denormalized from dim_projects)."
       - name: timesheet_count
         data_type: integer
-        description: "Number of accepted timesheet entries for this project."
+        description: "Number of timesheet entries for this project."
       - name: total_hours
         data_type: decimal(12,2)
-        description: "Total logged hours for this project (sum of fct_timesheets.hours). NOT NULL by construction."
+        description: "Total logged hours for this project (sum of fct_timesheets.hours)."
         constraints:
           - type: not_null
       - name: distinct_employees
@@ -117,7 +118,7 @@ models:
         description: "Count of distinct employees who logged hours on this project."
 
   - name: agg_hours_per_project_monthly
-    description: "Monthly hours per project (project x month). Adds the time dimension to the per-project rollup, revealing each project's burn-down/tempo over time. One row per (project_id, month). Reads fct_timesheets."
+    description: "Monthly per-project rollup of logged hours. Adds a time dimension to the per-project aggregation, exposing each project's burn-down over time. One row per (project_id, month). Reads fct_timesheets."
     config:
       contract:
         enforced: true
@@ -127,7 +128,7 @@ models:
     columns:
       - name: project_id
         data_type: varchar
-        description: "Project identifier; part of the composite PK (project_id, month)."
+        description: "Project identifier; part of the composite primary key (project_id, month)."
         tests:
           - relationships:
               arguments:
@@ -135,13 +136,13 @@ models:
                 field: project_id
       - name: project_name
         data_type: varchar
-        description: "Project name (denormalized from the fact)."
+        description: "Project name (denormalized from dim_projects)."
       - name: month
         data_type: date
-        description: "First day of the month (date_trunc('month', date)); part of the composite PK. One row per project-month with timesheets."
+        description: "First day of the month (date_trunc('month', date)); part of the composite primary key."
       - name: timesheet_count
         data_type: integer
-        description: "Number of accepted timesheet entries for this project in this month."
+        description: "Number of timesheet entries for this project in this month."
       - name: total_hours
         data_type: decimal(12,2)
         description: "Total logged hours for this project in this month."
@@ -150,7 +151,7 @@ models:
         description: "Count of distinct employees who logged hours on this project in this month."
 
   - name: rpt_project_economics
-    description: "Per-project economics: budget + logged hours + derived budget_per_hour (budget / total_hours). LEFT-joins from dim_projects so ALL projects appear (budgeted-but-not-started show 0 hours). ASSUMPTION: budget_per_hour is meaningful only if budget is a labor-cost budget; otherwise indicative only."
+    description: "Per-project economics report: budget, logged hours, and a derived budget_per_hour rate. Left-joins from dim_projects so all projects appear (budgeted-but-not-started projects show zero hours). budget_per_hour is meaningful only when the budget represents a labor-cost budget."
     config:
       contract:
         enforced: true
@@ -160,19 +161,19 @@ models:
     columns:
       - name: project_id
         data_type: varchar
-        description: "Project PK (DB-enforced). One row per project (35 rows, including projects with no timesheets)."
+        description: "Project primary key (DB-enforced)."
       - name: project_name
         data_type: varchar
-        description: "Project name from dim_projects."
+        description: "Project name (from dim_projects)."
       - name: budget
         data_type: decimal(12,2)
-        description: "Project budget from dim_projects. NULL for review projects (P008/P019/P032)."
+        description: "Project budget (from dim_projects); nullable."
       - name: total_hours
         data_type: decimal(12,2)
-        description: "Total logged hours for this project (0 for budgeted-but-not-started projects)."
+        description: "Total logged hours for this project (zero for budgeted-but-not-started projects)."
       - name: distinct_employees
         data_type: integer
-        description: "Count of distinct employees who logged hours (0 for projects with no timesheets)."
+        description: "Count of distinct employees who logged hours (zero for projects with no timesheets)."
       - name: budget_per_hour
         data_type: decimal(18,4)
-        description: "Derived: budget / total_hours. NULL when total_hours = 0 or budget is NULL. Assumes budget is a labor-cost budget (see model description)."
+        description: "Derived: budget / total_hours. NULL when total_hours is zero or budget is null."

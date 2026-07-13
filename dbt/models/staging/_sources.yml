@@ -3,52 +3,53 @@ version: 2
 sources:
   - name: raw
     description: >
-      Raw landing layer loaded verbatim from source CSVs by scripts/load_raw.py.
-      Every column is VARCHAR on purpose: this is a faithful, untyped copy of
-      the source files. Type coercion, cleaning, and validation happen in the
-      staging layer. DETECTION of bad data happens here via source tests (the
-      dbt-native validation output, persisted by store_failures to
-      main_dbt_test__audit): unique/not_null/accepted_values/relationships plus
-      the custom generic tests hours_in_range, date_parseable, invalid_budget,
-      unique_natural_key (defined in tests/generic/).
+      Raw landing layer loaded verbatim from the source CSVs by
+      scripts/load_raw.py. Every column is VARCHAR by design: this is a
+      faithful, untyped copy of the source files. Type coercion, cleaning, and
+      validation happen downstream in the staging layer. Source tests
+      (unique, not_null, accepted_values, relationships plus the custom
+      generic tests hours_in_range, date_parseable, invalid_budget,
+      unique_natural_key defined in tests/generic/) guard data quality at the
+      landing boundary; failing rows are persisted by store_failures to the
+      main_dbt_test__audit schema.
     schema: main_raw
     tables:
       - name: projects
-        description: "Raw projects CSV (project_id, project_name, budget) — 39 rows, all VARCHAR."
+        description: "Raw projects source (project_id, project_name, budget), all VARCHAR."
         columns:
           - name: project_id
-            description: "Raw project identifier (VARCHAR). Has 3 exact duplicates (P001/P007/P026) and 1 null row — detected by unique + not_null source tests."
+            description: "Raw project identifier (VARCHAR)."
             data_tests:
               - unique
               - not_null
           - name: project_name
-            description: "Raw project name (VARCHAR). NULL for P013 — detected by not_null (warn) source test."
+            description: "Raw project name (VARCHAR)."
             data_tests:
               - not_null:
                   config:
                     severity: warn
           - name: budget
-            description: "Raw project budget (VARCHAR). Issues: P008='55000-60000' (non-numeric), P019='-5000' (negative), P032=null — detected by invalid_budget (warn) source test."
+            description: "Raw project budget (VARCHAR); may be non-numeric, negative, or empty."
             data_tests:
               - invalid_budget:
                   config:
                     severity: warn
       - name: employees
-        description: "Raw employees CSV (employee_id, name, role) — 42 rows, all VARCHAR."
+        description: "Raw employees source (employee_id, name, role), all VARCHAR."
         columns:
           - name: employee_id
-            description: "Raw employee identifier (VARCHAR). Has 2 exact duplicates (E001/E014) — detected by unique source test."
+            description: "Raw employee identifier (VARCHAR)."
             data_tests:
               - unique
               - not_null
           - name: name
-            description: "Raw employee name (VARCHAR). NULL for E013 — detected by not_null (warn) source test."
+            description: "Raw employee name (VARCHAR)."
             data_tests:
               - not_null:
                   config:
                     severity: warn
           - name: role
-            description: "Raw employee role (VARCHAR). NULL for E021 — detected by not_null (warn). 8 valid roles validated by accepted_values source test."
+            description: "Raw employee role (VARCHAR); one of a fixed set of valid roles."
             data_tests:
               - not_null:
                   config:
@@ -65,14 +66,14 @@ sources:
                       - DevOps Engineer
                       - Project Manager
       - name: timesheets
-        description: "Raw timesheets CSV (employee_id, project_id, date, hours) — 343 rows, all VARCHAR."
+        description: "Raw timesheets source (employee_id, project_id, date, hours), all VARCHAR."
         data_tests:
           - unique_natural_key:
               arguments:
                 columns: [employee_id, project_id, date, hours]
         columns:
           - name: employee_id
-            description: "Raw employee FK (VARCHAR). 1 null row, 2 dangling (E099/E050) — detected by not_null + relationships source tests."
+            description: "Raw employee foreign key (VARCHAR)."
             data_tests:
               - not_null
               - relationships:
@@ -80,7 +81,7 @@ sources:
                     to: source('raw', 'employees')
                     field: employee_id
           - name: project_id
-            description: "Raw project FK (VARCHAR). 2 dangling (P999) — detected by relationships source test. No nulls."
+            description: "Raw project foreign key (VARCHAR)."
             data_tests:
               - not_null
               - relationships:
@@ -88,10 +89,10 @@ sources:
                     to: source('raw', 'projects')
                     field: project_id
           - name: date
-            description: "Raw timesheet date (VARCHAR). 3 source formats: dd/mm/yyyy (341), ISO yyyy-mm-dd (1), dd-Mon-yy (1). All parseable — date_parseable source test passes."
+            description: "Raw timesheet date (VARCHAR); mixed source formats (ISO yyyy-mm-dd, dd/mm/yyyy, dd-Mon-yy)."
             data_tests:
               - date_parseable
           - name: hours
-            description: "Raw hours worked (VARCHAR). Issues: 2 non-numeric ('not_a_number', 'seven'), 1 null, 2 out-of-range (-3, 25) — detected by hours_in_range source test."
+            description: "Raw hours worked (VARCHAR)."
             data_tests:
               - hours_in_range

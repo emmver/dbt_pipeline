@@ -2,23 +2,23 @@ version: 2
 
 models:
   - name: int_timesheets_validated
-    description: "The accepted fact set: stg_timesheets semi-joined to the clean stg_employees / stg_projects (IN subqueries, no fan-out) to filter dangling FKs. Feeds fct_timesheets. The only intermediate (connects multiple atomic sources)."
+    description: "The accepted fact set: stg_timesheets semi-joined to stg_employees and stg_projects to retain only rows whose foreign keys resolve to a real dimension row. The only cross-source model in the pipeline; feeds fct_timesheets."
     config:
       contract:
         enforced: true
     columns:
       - name: timesheet_id
         data_type: varchar
-        description: "Deterministic surrogate PK (md5 of natural key) from stg_timesheets; one per accepted timesheet row."
+        description: "Deterministic surrogate primary key; md5 of the natural key. One row per accepted timesheet."
       - name: employee_id
         data_type: varchar
-        description: "Employee FK; guaranteed non-dangling after the semi-join filter to stg_employees."
+        description: "Employee foreign key; resolves to a row in stg_employees."
       - name: project_id
         data_type: varchar
-        description: "Project FK; guaranteed non-dangling after the semi-join filter to stg_projects."
+        description: "Project foreign key; resolves to a row in stg_projects."
       - name: date
         data_type: date
-        description: "Parsed timesheet date (ISO / dd/mm/yyyy / dd-Mon-yy); non-null and valid (bad dates removed in staging)."
+        description: "Parsed timesheet date; non-null."
       - name: hours
         data_type: decimal(5,2)
-        description: "Hours worked; non-null, in range (0, 24] (non-numeric and out-of-range removed in staging)."
+        description: "Hours worked; non-null, in range (0, 24]."

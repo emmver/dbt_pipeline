@@ -1,46 +1,46 @@
 version: 2
 
-# Staging = typed projections of the raw sources + source-level cleaning
-# (dedup of exact duplicates; hard single-source rejects removed in
+# Staging = typed projections of the raw sources plus source-level cleaning
+# (dedup of exact duplicates; single-source hard rejects removed in
 # stg_timesheets). Per dbt-Labs guidance, staging "should clean up or mitigate
 # data issues that can't be fixed at the source" -- duplicate rows and
 # single-source hard rejects are exactly that, so they are filtered here. No
-# tests on staging models themselves: DETECTION happens at the source layer
+# tests on staging models themselves: detection happens at the source layer
 # (source tests in _sources.yml) and the consumer-facing marts carry their own
-# grain tests. Reviewing soft-issue rows (null name/role, null/invalid budget)
-# is intentionally left in the dims because the id is valid.
+# grain tests. Rows with a valid key but a missing or suspect attribute are
+# intentionally retained and surfaced by warn-severity source tests.
 
 models:
   - name: stg_projects
-    description: "Typed, deduped projection of raw.projects: one row per non-null project_id (dup_rank = 1 survivor). try_cast budget to decimal (non-numeric -> NULL). Soft-issue rows (null name, null/invalid/negative budget) are KEPT; negative budget is nullified in dim_projects."
+    description: "Typed, deduplicated projection of raw.projects. One row per non-null project_id (dedup survivor by dup_rank = 1). Budget is cast to decimal; non-numeric values become NULL. Rows with a valid id but a missing or invalid attribute are retained."
     columns:
       - name: project_id
-        description: "Clean project identifier (non-null; exact duplicates removed)."
+        description: "Project identifier; non-null, exact duplicates removed."
       - name: project_name
-        description: "Project name (NULL where the source field was empty -- P013)."
+        description: "Project name; nullable."
       - name: budget
-        description: "Budget as decimal(12,2); non-numeric source values (e.g. '55000-60000' for P008) -> NULL. Negative (P019) preserved here, nullified in dim_projects."
+        description: "Project budget as decimal(12,2); nullable (non-numeric source values become NULL)."
 
   - name: stg_employees
-    description: "Typed, deduped projection of raw.employees: one row per non-null employee_id (dup_rank = 1 survivor). Soft-issue rows (null name/role) are KEPT since the id is valid."
+    description: "Typed, deduplicated projection of raw.employees. One row per non-null employee_id (dedup survivor). Rows with a valid id but a missing name or role are retained."
     columns:
       - name: employee_id
-        description: "Clean employee identifier (non-null; exact duplicates removed)."
+        description: "Employee identifier; non-null, exact duplicates removed."
       - name: name
-        description: "Employee name (NULL where empty -- E013)."
+        description: "Employee name; nullable."
       - name: role
-        description: "Employee role (NULL where empty -- E021)."
+        description: "Employee role; nullable."
 
   - name: stg_timesheets
-    description: "Typed, deduped projection of raw.timesheets with single-source hard rejects removed (missing employee_id, unparseable date, non-numeric/out-of-range hours). Cross-source dangling FKs (E099/E050/P999) are KEPT here and removed in int_timesheets_validated. Adds a deterministic surrogate PK timesheet_id."
+    description: "Typed projection of raw.timesheets with single-source validity filtering: rows missing employee_id, with an unparseable date, or with non-numeric or out-of-range hours are removed. Adds a deterministic surrogate primary key. Cross-source referential issues are resolved downstream in int_timesheets_validated."
     columns:
       - name: timesheet_id
-        description: "Deterministic surrogate PK = md5(employee_id|project_id|date|hours)."
+        description: "Deterministic surrogate primary key; md5 of the natural key (employee_id, project_id, date, hours)."
       - name: employee_id
-        description: "Employee identifier (non-null; single-source rejects with null employee_id removed; dangling E099/E050 retained)."
+        description: "Employee identifier; non-null."
       - name: project_id
-        description: "Project identifier (non-null; dangling P999 retained)."
+        description: "Project identifier; non-null."
       - name: date
-        description: "Parsed date via coalesce(try_cast date, try_strptime %d/%m/%Y, try_strptime %d-%b-%y); unparseable rows removed."
+        description: "Parsed timesheet date; non-null. Coerced from multiple source formats (ISO, dd/mm/yyyy, dd-Mon-yy)."
       - name: hours
-        description: "Hours as decimal(5,2); non-numeric rows removed, out-of-range (<=0 or >24) rows removed."
+        description: "Hours worked as decimal(5,2); non-null, constrained to the range (0, 24]."

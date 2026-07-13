@@ -4,8 +4,7 @@
 -- fact set. This is the legitimate intermediate role (joins/references multiple
 -- atomic staging models). Uses semi-joins (IN) against the clean dim-source
 -- keys to avoid fan-out. No flags, no status column -- cleaning is a where
--- filter, not a flag. Dangling rows present in stg_timesheets (E099/E050/P999)
--- are dropped here.
+-- filter, not a flag.
 
 select
     ts.timesheet_id,

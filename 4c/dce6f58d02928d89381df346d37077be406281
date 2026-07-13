@@ -1,0 +1,30 @@
+dbt/docs/schema_design.md
+  s_c63aaa8eb8080a::t_c856343980dcab 92
+  s_c63aaa8eb8080a::t_5a864838dbde94 9,18-21,23,27-29,33-36,59-60,67,100-103
+warehouse/schema.sql
+  s_c63aaa8eb8080a::t_202df43c02eafd 25
+README.md
+  s_c63aaa8eb8080a::t_32b6b53690f959 99,101,114,120-125,127,292,352
+  s_c63aaa8eb8080a::t_6d0222949b4c8f 140,318
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.13",
+  "base_commit_sha": "4cdce6f58d02928d89381df346d37077be406281",
+  "prompts": {},
+  "humans": {
+    "h_8e87e22889a3a4": {
+      "author": "emmver <emmvereroudakis@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_c63aaa8eb8080a": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f381f-3552-765a-b9fc-43c7f19564d8",
+        "model": "glm-5.2:cloud"
+      },
+      "human_author": "emmver <emmvereroudakis@gmail.com>"
+    }
+  }
+}

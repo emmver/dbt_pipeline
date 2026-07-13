@@ -2,7 +2,7 @@
 Raw load stage.
 
 Reads the three source CSVs from data/ and lands them verbatim into the
-`raw` schema of a DuckDB warehouse. No cleaning, no type coercion: every
+`main_raw` schema of a DuckDB warehouse. No cleaning, no type coercion: every
 column is stored as VARCHAR so the raw layer is a faithful copy of the
 source files. Validation and typing happen in later (staging) stages.
 
@@ -17,7 +17,7 @@ import duckdb
 # Project paths
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
-WAREHOUSE = ROOT / "warehouse" / "alma.duckdb"
+WAREHOUSE = ROOT / "warehouse" / "dbt_pipeline.duckdb"
 
 # Source files -> target table names
 SOURCES = {
@@ -48,7 +48,10 @@ RAW_COLUMNS = {
 
 
 def load_raw(con: duckdb.DuckDBPyConnection) -> None:
-    con.execute("CREATE SCHEMA IF NOT EXISTS raw")
+    # `main_raw` mirrors dbt's default `main_<schema>` naming so the four
+    # pipeline layers are symmetric siblings: main_raw / main_staging /
+    # main_intermediate / main_marts.
+    con.execute("CREATE SCHEMA IF NOT EXISTS main_raw")
 
     for filename, table in SOURCES.items():
         csv_path = DATA_DIR / filename
@@ -59,14 +62,14 @@ def load_raw(con: duckdb.DuckDBPyConnection) -> None:
         col_defs = ", ".join(f"{name} {dtype}" for name, dtype in columns)
 
         # CREATE OR REPLACE guarantees a clean, idempotent reload every run.
-        con.execute(f"CREATE OR REPLACE TABLE raw.{table} ({col_defs})")
+        con.execute(f"CREATE OR REPLACE TABLE main_raw.{table} ({col_defs})")
 
         # read_csv with header=True and all_varchar=True so DuckDB does not
         # infer types or drop/mangle anything. We insert into the pre-typed
         # table to be explicit.
         con.execute(
             f"""
-            INSERT INTO raw.{table}
+            INSERT INTO main_raw.{table}
             SELECT * FROM read_csv_auto(
                 '{csv_path.as_posix()}',
                 header = true,
@@ -75,8 +78,8 @@ def load_raw(con: duckdb.DuckDBPyConnection) -> None:
             """
         )
 
-        count = con.execute(f"SELECT COUNT(*) FROM raw.{table}").fetchone()[0]
-        print(f"raw.{table}: {count} rows loaded from {filename}")
+        count = con.execute(f"SELECT COUNT(*) FROM main_raw.{table}").fetchone()[0]
+        print(f"main_raw.{table}: {count} rows loaded from {filename}")
 
 
 def main() -> None:

@@ -1,0 +1,22 @@
+project_id,project_name,timesheet_count,total_hours,distinct_employees
+P007,ML Forecasting Pipeline,38,310.00,9
+P001,Alpha Platform Rebuild,25,191.00,5
+P003,Customer Portal v2,20,141.00,6
+P005,Mobile App Launch,18,132.50,10
+P010,Data Catalogue Implementation,18,129.00,4
+P026,Experimentation Platform,18,125.50,6
+P020,Product Recommendation Engine,16,118.50,6
+P031,Customer Churn Model,14,114.50,6
+P008,API Gateway Consolidation,15,113.50,5
+P030,Feature Store Build-Out,15,109.00,8
+P002,Data Warehouse Migration,14,107.00,5
+P025,Search Relevance Improvement,15,106.50,9
+P023,Data Mesh Pilot,13,99.50,7
+P006,Legacy System Decommission,13,98.50,3
+P009,Compliance Reporting Tool,13,93.50,4
+P035,Cross-Sell Recommendation,12,89.50,6
+P018,Event Streaming Platform,12,84.50,2
+P004,Internal Analytics Dashboard,19,80.50,6
+P029,Observability Stack,9,70.00,3
+P015,Self-Serve BI Rollout,10,39.50,5
+P012,Real-Time Alerting System,4,29.50,1

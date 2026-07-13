@@ -1,0 +1,46 @@
+version: 2
+
+# Staging = typed projections of the raw sources + source-level cleaning
+# (dedup of exact duplicates; hard single-source rejects removed in
+# stg_timesheets). Per dbt-Labs guidance, staging "should clean up or mitigate
+# data issues that can't be fixed at the source" -- duplicate rows and
+# single-source hard rejects are exactly that, so they are filtered here. No
+# tests on staging models themselves: DETECTION happens at the source layer
+# (source tests in _sources.yml) and the consumer-facing marts carry their own
+# grain tests. Reviewing soft-issue rows (null name/role, null/invalid budget)
+# is intentionally left in the dims because the id is valid.
+
+models:
+  - name: stg_projects
+    description: "Typed, deduped projection of raw.projects: one row per non-null project_id (dup_rank = 1 survivor). try_cast budget to decimal (non-numeric -> NULL). Soft-issue rows (null name, null/invalid/negative budget) are KEPT; negative budget is nullified in dim_projects."
+    columns:
+      - name: project_id
+        description: "Clean project identifier (non-null; exact duplicates removed)."
+      - name: project_name
+        description: "Project name (NULL where the source field was empty -- P013)."
+      - name: budget
+        description: "Budget as decimal(12,2); non-numeric source values (e.g. '55000-60000' for P008) -> NULL. Negative (P019) preserved here, nullified in dim_projects."
+
+  - name: stg_employees
+    description: "Typed, deduped projection of raw.employees: one row per non-null employee_id (dup_rank = 1 survivor). Soft-issue rows (null name/role) are KEPT since the id is valid."
+    columns:
+      - name: employee_id
+        description: "Clean employee identifier (non-null; exact duplicates removed)."
+      - name: name
+        description: "Employee name (NULL where empty -- E013)."
+      - name: role
+        description: "Employee role (NULL where empty -- E021)."
+
+  - name: stg_timesheets
+    description: "Typed, deduped projection of raw.timesheets with single-source hard rejects removed (missing employee_id, unparseable date, non-numeric/out-of-range hours). Cross-source dangling FKs (E099/E050/P999) are KEPT here and removed in int_timesheets_validated. Adds a deterministic surrogate PK timesheet_id."
+    columns:
+      - name: timesheet_id
+        description: "Deterministic surrogate PK = md5(employee_id|project_id|date|hours)."
+      - name: employee_id
+        description: "Employee identifier (non-null; single-source rejects with null employee_id removed; dangling E099/E050 retained)."
+      - name: project_id
+        description: "Project identifier (non-null; dangling P999 retained)."
+      - name: date
+        description: "Parsed date via coalesce(try_cast date, try_strptime %d/%m/%Y, try_strptime %d-%b-%y); unparseable rows removed."
+      - name: hours
+        description: "Hours as decimal(5,2); non-numeric rows removed, out-of-range (<=0 or >24) rows removed."

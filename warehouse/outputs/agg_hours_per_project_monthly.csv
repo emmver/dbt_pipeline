@@ -1,0 +1,73 @@
+project_id,project_name,month,timesheet_count,total_hours,distinct_employees
+P001,Alpha Platform Rebuild,2024-01-01,8,62.50,5
+P001,Alpha Platform Rebuild,2024-02-01,5,37.50,5
+P001,Alpha Platform Rebuild,2024-03-01,5,37.50,5
+P001,Alpha Platform Rebuild,2024-04-01,6,46.00,5
+P001,Alpha Platform Rebuild,2024-05-01,1,7.50,1
+P002,Data Warehouse Migration,2024-01-01,5,39.50,5
+P002,Data Warehouse Migration,2024-02-01,1,8.00,1
+P002,Data Warehouse Migration,2024-03-01,4,30.00,4
+P002,Data Warehouse Migration,2024-05-01,4,29.50,4
+P003,Customer Portal v2,2024-01-01,6,41.00,5
+P003,Customer Portal v2,2024-02-01,2,14.00,2
+P003,Customer Portal v2,2024-03-01,6,43.00,6
+P003,Customer Portal v2,2024-05-01,6,43.00,6
+P004,Internal Analytics Dashboard,2024-01-01,8,34.00,6
+P004,Internal Analytics Dashboard,2024-03-01,5,19.50,5
+P004,Internal Analytics Dashboard,2024-05-01,6,27.00,6
+P005,Mobile App Launch,2024-01-01,8,57.50,8
+P005,Mobile App Launch,2024-03-01,6,44.50,6
+P005,Mobile App Launch,2024-05-01,4,30.50,4
+P006,Legacy System Decommission,2024-01-01,4,32.00,3
+P006,Legacy System Decommission,2024-03-01,3,21.50,3
+P006,Legacy System Decommission,2024-04-01,3,21.50,3
+P006,Legacy System Decommission,2024-05-01,3,23.50,3
+P007,ML Forecasting Pipeline,2024-01-01,9,74.50,6
+P007,ML Forecasting Pipeline,2024-02-01,4,33.50,4
+P007,ML Forecasting Pipeline,2024-03-01,9,72.00,9
+P007,ML Forecasting Pipeline,2024-04-01,7,58.00,7
+P007,ML Forecasting Pipeline,2024-05-01,9,72.00,9
+P008,API Gateway Consolidation,2024-01-01,5,40.00,3
+P008,API Gateway Consolidation,2024-03-01,5,36.50,5
+P008,API Gateway Consolidation,2024-05-01,5,37.00,5
+P009,Compliance Reporting Tool,2024-01-01,5,36.00,4
+P009,Compliance Reporting Tool,2024-03-01,3,21.50,3
+P009,Compliance Reporting Tool,2024-04-01,3,21.50,3
+P009,Compliance Reporting Tool,2024-05-01,2,14.50,2
+P010,Data Catalogue Implementation,2024-01-01,6,40.50,4
+P010,Data Catalogue Implementation,2024-03-01,4,29.50,4
+P010,Data Catalogue Implementation,2024-04-01,4,29.50,4
+P010,Data Catalogue Implementation,2024-05-01,4,29.50,4
+P012,Real-Time Alerting System,2024-01-01,1,8.00,1
+P012,Real-Time Alerting System,2024-02-01,1,6.50,1
+P012,Real-Time Alerting System,2024-04-01,1,8.00,1
+P012,Real-Time Alerting System,2024-05-01,1,7.00,1
+P015,Self-Serve BI Rollout,2024-02-01,5,19.50,5
+P015,Self-Serve BI Rollout,2024-04-01,5,20.00,5
+P018,Event Streaming Platform,2024-01-01,3,20.50,2
+P018,Event Streaming Platform,2024-02-01,2,15.00,2
+P018,Event Streaming Platform,2024-03-01,1,7.00,1
+P018,Event Streaming Platform,2024-04-01,4,28.00,2
+P018,Event Streaming Platform,2024-05-01,2,14.00,2
+P020,Product Recommendation Engine,2024-02-01,6,44.50,6
+P020,Product Recommendation Engine,2024-04-01,6,44.50,6
+P020,Product Recommendation Engine,2024-05-01,4,29.50,4
+P023,Data Mesh Pilot,2024-02-01,7,52.50,7
+P023,Data Mesh Pilot,2024-04-01,4,31.00,4
+P023,Data Mesh Pilot,2024-05-01,2,16.00,2
+P025,Search Relevance Improvement,2024-02-01,9,64.00,9
+P025,Search Relevance Improvement,2024-04-01,6,42.50,6
+P026,Experimentation Platform,2024-02-01,6,40.00,6
+P026,Experimentation Platform,2024-04-01,6,43.00,6
+P026,Experimentation Platform,2024-05-01,6,42.50,6
+P029,Observability Stack,2024-02-01,3,23.50,3
+P029,Observability Stack,2024-03-01,3,23.00,3
+P029,Observability Stack,2024-05-01,3,23.50,3
+P030,Feature Store Build-Out,2024-02-01,8,58.50,8
+P030,Feature Store Build-Out,2024-04-01,4,29.00,4
+P030,Feature Store Build-Out,2024-05-01,3,21.50,3
+P031,Customer Churn Model,2024-02-01,6,49.50,6
+P031,Customer Churn Model,2024-04-01,4,32.50,4
+P031,Customer Churn Model,2024-05-01,4,32.50,4
+P035,Cross-Sell Recommendation,2024-03-01,6,44.50,6
+P035,Cross-Sell Recommendation,2024-04-01,6,45.00,6

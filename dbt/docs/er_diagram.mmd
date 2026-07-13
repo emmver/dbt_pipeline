@@ -1,0 +1,53 @@
+%% dbt pipeline — Task 4: star schema for the timesheet warehouse (schema main_marts).
+%% Full column types/constraints are in warehouse/schema.sql; this ERD shows
+%% entities, keys, and relationships.
+erDiagram
+    dim_projects {
+        VARCHAR project_id PK
+        VARCHAR project_name
+        DECIMAL budget
+    }
+    dim_employees {
+        VARCHAR employee_id PK
+        VARCHAR name
+        VARCHAR role
+    }
+    fct_timesheets {
+        VARCHAR timesheet_id PK
+        VARCHAR employee_id FK
+        VARCHAR employee_name
+        VARCHAR employee_role
+        VARCHAR project_id FK
+        VARCHAR project_name
+        DECIMAL project_budget
+        DATE date
+        DECIMAL hours
+    }
+    agg_hours_per_project {
+        VARCHAR project_id PK
+        VARCHAR project_name
+        INTEGER timesheet_count
+        DECIMAL total_hours
+        INTEGER distinct_employees
+    }
+    agg_hours_per_project_monthly {
+        VARCHAR project_id PK
+        DATE month PK
+        VARCHAR project_name
+        INTEGER timesheet_count
+        DECIMAL total_hours
+        INTEGER distinct_employees
+    }
+    rpt_project_economics {
+        VARCHAR project_id PK
+        VARCHAR project_name
+        DECIMAL budget
+        DECIMAL total_hours
+        INTEGER distinct_employees
+        DECIMAL budget_per_hour
+    }
+    dim_projects  ||--o{ fct_timesheets                  : "has"
+    dim_employees ||--o{ fct_timesheets                  : "logs"
+    dim_projects  ||--o| agg_hours_per_project           : "per-project rollup"
+    dim_projects  ||--o{ agg_hours_per_project_monthly    : "monthly rollup"
+    dim_projects  ||--|| rpt_project_economics           : "economics"

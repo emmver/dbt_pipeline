@@ -1,0 +1,21 @@
+dbt/models/intermediate/int_timesheets_validated.sql
+  s_c63aaa8eb8080a::t_bac3ebce67040f 3-8,18-19
+docs/docglow-data.json
+  s_c63aaa8eb8080a::t_c1ea2e137b2ce6 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.13",
+  "base_commit_sha": "f8060db268476f402f61f5c0f08f533f7512378b",
+  "prompts": {},
+  "sessions": {
+    "s_c63aaa8eb8080a": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f381f-3552-765a-b9fc-43c7f19564d8",
+        "model": "glm-5.2:cloud"
+      },
+      "human_author": "emmver <emmvereroudakis@gmail.com>"
+    }
+  }
+}

@@ -32,7 +32,7 @@ four physical DuckDB schemas that mirror four dbt layers:
 | `dbt/` | dbt project (`dbt_project.yml`, `profiles.yml`, `models/`, `tests/`). |
 | `dbt/models/staging/` | `stg_projects`, `stg_employees`, `stg_timesheets` + YAML. |
 | `dbt/models/intermediate/` | `int_timesheets_validated` + YAML. |
-| `dbt/models/marts/` | `dim_projects`, `dim_employees`, `fct_timesheets`, `agg_hours_per_project` + YAML. |
+| `dbt/models/marts/` | `dim_projects`, `dim_employees`, `fct_timesheets`, `agg_hours_per_project`, `agg_hours_per_project_monthly`, `rpt_project_economics` + YAML. |
 | `dbt/tests/generic/` | Custom tests: `hours_in_range`, `date_parseable`, `invalid_budget`, `unique_natural_key`. |
 | `dbt/docs/schema_design.md` | Design notes: ER overview, DB-vs-pipeline enforcement table, assumptions. |
 | `dbt/docs/er_diagram.mmd` | Mermaid ER diagram of `main_marts`. |

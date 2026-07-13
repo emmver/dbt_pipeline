@@ -70,7 +70,7 @@ sources:
         data_tests:
           - unique_natural_key:
               arguments:
-                columns: [employee_id, project_id, date, hours]
+                columns: [employee_id, project_id, date]
         columns:
           - name: employee_id
             description: "Raw employee foreign key (VARCHAR)."

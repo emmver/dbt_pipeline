@@ -53,7 +53,7 @@ models:
     columns:
       - name: timesheet_id
         data_type: varchar
-        description: "Fact primary key (DB-enforced). Deterministic md5 surrogate of the natural key (employee_id, project_id, date, hours)."
+        description: "Fact primary key (DB-enforced). Deterministic md5 surrogate of the natural key (employee_id, project_id, date)."
         constraints:
           - type: primary_key
       - name: employee_id

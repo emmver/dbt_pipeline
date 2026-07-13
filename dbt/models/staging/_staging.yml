@@ -35,7 +35,7 @@ models:
     description: "Typed projection of raw.timesheets with single-source validity filtering: rows missing employee_id, with an unparseable date, or with non-numeric or out-of-range hours are removed. Adds a deterministic surrogate primary key. Cross-source referential issues are resolved downstream in int_timesheets_validated."
     columns:
       - name: timesheet_id
-        description: "Deterministic surrogate primary key; md5 of the natural key (employee_id, project_id, date, hours)."
+        description: "Deterministic surrogate primary key; md5 of the natural key (employee_id, project_id, date)."
       - name: employee_id
         description: "Employee identifier; non-null."
       - name: project_id

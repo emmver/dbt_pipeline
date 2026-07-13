@@ -319,8 +319,9 @@ erDiagram
   it rather than silently losing data. A `NOT NULL` constraint isn't used
   here because it would hard-fail the build on those intentionally-kept rows.
 - **Deterministic md5 surrogate `timesheet_id`.** The fact primary key is an
-  md5 hash of the natural key (employee_id, project_id, date, hours) — stable
-  across re-runs and independent of source-row ordering.
+  md5 hash of the natural key (employee_id, project_id, date) — the grain is one
+  timesheet per employee/project/day; `hours` is a measure, not part of the
+  key. The hash is stable across re-runs and independent of source-row ordering.
 - **Run with `dbt run` then `dbt test`, not `dbt build`.** In dbt-Fusion,
   `dbt build` skips downstream models when a source test errors, which would
   silently drop the marts. Running `run` then `test` keeps model materialization

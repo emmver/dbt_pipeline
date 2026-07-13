@@ -96,9 +96,9 @@ configured schema name, hence `main_staging`, `main_intermediate`, `main_marts`)
 | Raw | — | `main_raw` | table (Python) | `projects`, `employees`, `timesheets` |
 | Staging | `staging` | `main_staging` | view | `stg_projects`, `stg_employees`, `stg_timesheets` |
 | Intermediate | `intermediate` | `main_intermediate` | table | `int_timesheets_validated` |
-| Marts | `marts` | `main_marts` | table | `dim_projects`, `dim_employees`, `fct_timesheets`, `agg_hours_per_project` |
+| Marts | `marts` | `main_marts` | table | `dim_projects`, `dim_employees`, `fct_timesheets`, `agg_hours_per_project`, `agg_hours_per_project_monthly`, `rpt_project_economics` |
 
-### The 8 models / DAG flow
+### The 10 models / DAG flow
 
 ```
                        main_raw (Python load)
@@ -111,15 +111,20 @@ configured schema name, hence `main_staging`, `main_intermediate`, `main_marts`)
               |     |             +-----+-------+
               |     |                   |
               |     |        int_timesheets_validated          (intermediate: cross-source
-              |     |                   |                       semi-join filters dangling FKs)
+              |     |                   |                       inner-join filters dangling FKs)
               |     |                   |
               +-----+-------------------+----+
                     |        |                |
               dim_projects  dim_employees   fct_timesheets      (marts: pure joins,
                     |            |                |                no filters, contracts)
-                    +------------+----------------+
+                    |            |                +--------+--------+
+                    |            |                         |        |
+                    |            |          agg_hours_per_project   agg_hours_per_project_monthly
+                    |            |             (rollup by project)    (rollup by project x month)
+                    |            |                         |
+                    +------------+---- LEFT JOIN -----------+
                                  |
-                       agg_hours_per_project              (rollup by project_id)
+                      rpt_project_economics              (budget + hours -> budget_per_hour)
 ```
 
 ### Where cleaning happens
@@ -132,7 +137,7 @@ configured schema name, hence `main_staging`, `main_intermediate`, `main_marts`)
   `date`, non-numeric/out-of-range `hours`. A deterministic md5 surrogate
   `timesheet_id` is added.
 - **Intermediate** does the only *cross-source* cleaning:
-  `int_timesheets_validated` semi-joins `stg_timesheets` to
+  `int_timesheets_validated` inner-joins `stg_timesheets` to
   `stg_employees` / `stg_projects` and filters dangling FKs → the **accepted
   fact set**. No flags / status columns: cleaning is a `WHERE` filter.
 - **Marts** are pure joins/aggregations on already-clean data — no filtering.
@@ -284,7 +289,7 @@ erDiagram
 | Check | Enforced where | Mechanism |
 |---|---|---|
 | **PK** (uniqueness + not-null) | DB (build time) | DuckDB `PRIMARY KEY` constraint on all 4 PK columns. Idempotent (no cross-table dep) → `CREATE OR REPLACE` re-runs succeed. |
-| **FK** (referential integrity) | **Pipeline + test** (not DB) | `int_timesheets_validated` semi-join filter (prevention) + `relationships` tests (detection). A DB `FOREIGN KEY` breaks idempotent re-runs in DuckDB (dbt-duckdb #425). Declared in `schema.sql` as intended design only. |
+| **FK** (referential integrity) | **Pipeline + test** (not DB) | `int_timesheets_validated` inner-join filter (prevention) + `relationships` tests (detection). A DB `FOREIGN KEY` breaks idempotent re-runs in DuckDB (dbt-duckdb #425). Declared in `schema.sql` as intended design only. |
 | `hours` range, `date` validity, `budget` validity | Pipeline + test | Staging/intermediate filters + custom source tests. Intended `CHECK`s in `schema.sql`, not materialized. |
 | Soft/review nulls (`name`, `role`, `budget`) | Test (warn) | Warn-severity `not_null`/`invalid_budget` tests. **No** DB `NOT NULL` — would hard-fail the build on intentionally-kept review rows. |
 | Source dup/missing-id/bad-hours/dangling-FK | Source test + audit | Error-severity tests on `main_raw` + `store_failures` → `main_dbt_test__audit`. |
@@ -310,7 +315,7 @@ erDiagram
   build time (and are idempotent on re-runs). Foreign keys are *not* DB
   constraints: in DuckDB a `FOREIGN KEY` prevents `CREATE OR REPLACE` of the
   referenced table on re-runs (dbt-duckdb #425), which would break idempotency.
-  So FK integrity is enforced by the `int_timesheets_validated` semi-join
+  So FK integrity is enforced by the `int_timesheets_validated` inner-join
   filter (prevention) and `relationships` tests (detection). The intended FK is
   declared in `warehouse/schema.sql` as the design target.
 - **Soft "review" rows are kept, not dropped.** A row with a valid key but a
@@ -344,7 +349,7 @@ Idempotency is ensured end-to-end:
   `warehouse/schema.sql`.
 - `store_failures` audit tables are replaced on each `dbt test`.
 
-**Verified:** three consecutive `dbt run`s all succeed 8/8 models. A fresh
+**Verified:** three consecutive `dbt run`s all succeed 10/10 models. A fresh
 `.venv/bin/python scripts/load_raw.py` → `dbt run` → `dbt test` cycle reproduces the same
 accepted counts (331 / 35 / 40) every time.
 

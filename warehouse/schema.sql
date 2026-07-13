@@ -22,7 +22,7 @@
 --     (dbt's ref() includes the DB prefix) was worked around with an
 --     expression-based FK, but the idempotency issue remained. FK integrity is
 --     therefore enforced by the PIPELINE (int_timesheets_validated filters
---     dangling rows via a semi-join to the dims — prevention) and DETECTED by
+--     dangling rows via an inner join to the dims — prevention) and DETECTED by
 --     dbt `relationships` tests (post-build). FK is declared below for design
 --     completeness; it is not materialized in the live warehouse.
 --   * NOT NULL on fct.date / fct.hours — declared below as the intended design;

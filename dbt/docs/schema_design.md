@@ -6,7 +6,7 @@ inside `warehouse/dbt_pipeline.duckdb`. Source data flows `main_raw` (Python-loa
 
 ## 1. ER overview
 
-Four entities in `main_marts` (see `dbt/docs/er_diagram.mmd`):
+Six entities in `main_marts` (see `dbt/docs/er_diagram.mmd`):
 
 - **`dim_projects`** — project dimension (35 rows). PK `project_id`.
 - **`dim_employees`** — employee dimension (40 rows). PK `employee_id`.
@@ -15,17 +15,25 @@ Four entities in `main_marts` (see `dbt/docs/er_diagram.mmd`):
   attributes (`employee_name`, `employee_role`, `project_name`,
   `project_budget`) are joined in for query convenience.
 - **`agg_hours_per_project`** — project-level rollup (21 rows). PK `project_id`.
+- **`agg_hours_per_project_monthly`** — monthly project rollup (72 rows). Composite
+  PK (`project_id`, `month`); adds the time dimension for per-project burn-down.
+- **`rpt_project_economics`** — per-project economics (35 rows). PK `project_id`;
+  `budget` + `total_hours` → derived `budget_per_hour`.
 
-Relationships (both 1—to—many):
+Relationships (1—to—many unless noted):
 
 - `PROJECTS ||--o{ TIMESHEETS : "has"` — a project has many timesheets.
 - `EMPLOYEES ||--o{ TIMESHEETS : "logs"` — an employee logs many timesheets.
+- `PROJECTS ||--o| AGG_HOURS_PER_PROJECT : "per-project rollup"`.
+- `PROJECTS ||--o{ AGG_HOURS_PER_PROJECT_MONTHLY : "monthly rollup"`.
+- `PROJECTS ||--|| RPT_PROJECT_ECONOMICS : "economics"`.
 
 ```
 dim_projects 1 ──< N fct_timesheets N >── 1 dim_employees
-                          |
-                          v
-                 agg_hours_per_project (rollup by project_id)
+        |
+        ├─ 1 ──1| agg_hours_per_project
+        ├─ 1 ──<N agg_hours_per_project_monthly
+        └─ 1 ──1  rpt_project_economics (LEFT JOIN agg_hours_per_project)
 ```
 
 ## 2. Proposed schema
@@ -48,13 +56,15 @@ Column types match the live warehouse exactly (verified via
 - `dim_employees`: `employee_id VARCHAR`, `name VARCHAR`, `role VARCHAR`
 - `fct_timesheets`: `timesheet_id VARCHAR`, `employee_id VARCHAR`, `employee_name VARCHAR`, `employee_role VARCHAR`, `project_id VARCHAR`, `project_name VARCHAR`, `project_budget DECIMAL(12,2)`, `date DATE`, `hours DECIMAL(5,2)`
 - `agg_hours_per_project`: `project_id VARCHAR`, `project_name VARCHAR`, `timesheet_count INTEGER`, `total_hours DECIMAL(12,2)`, `distinct_employees INTEGER`
+- `agg_hours_per_project_monthly`: `project_id VARCHAR`, `month DATE`, `project_name VARCHAR`, `timesheet_count INTEGER`, `total_hours DECIMAL(12,2)`, `distinct_employees INTEGER`
+- `rpt_project_economics`: `project_id VARCHAR`, `project_name VARCHAR`, `budget DECIMAL(12,2)`, `total_hours DECIMAL(12,2)`, `distinct_employees INTEGER`, `budget_per_hour DECIMAL(18,4)`
 
 ## 3. DB-vs-pipeline enforcement
 
 | Check | Enforced where | Mechanism | Notes |
 |---|---|---|---|
 | PK uniqueness + not-null | DB (build time) | DuckDB `PRIMARY KEY` constraint | Idempotent: no cross-table dependency, so `CREATE OR REPLACE` re-runs succeed. Verified in `information_schema.table_constraints` (PK on all four tables); dup/null inserts blocked. |
-| FK referential integrity | Pipeline + test (not DB) | `int_timesheets_validated` semi-join filter (prevention) + `relationships` tests (detection) | A DB `FOREIGN KEY` renders and DuckDB enforces it, but it **breaks idempotent re-runs** ("Cannot alter entry because entries depend on it" — dbt-duckdb #425): the dim can't be CREATE-OR-REPLACEd while the fact's FK references it. Cross-DB `ref()` prefix bug worked around with an expression-based FK, but idempotency issue remained. |
+| FK referential integrity | Pipeline + test (not DB) | `int_timesheets_validated` inner-join filter (prevention) + `relationships` tests (detection) | A DB `FOREIGN KEY` renders and DuckDB enforces it, but it **breaks idempotent re-runs** ("Cannot alter entry because entries depend on it" — dbt-duckdb #425): the dim can't be CREATE-OR-REPLACEd while the fact's FK references it. Cross-DB `ref()` prefix bug worked around with an expression-based FK, but idempotency issue remained. |
 | Value range — `hours` | Pipeline + test | staging/intermediate filters (`hours > 0 AND hours <= 24`) + source custom range test | Intended `CHECK` declared in `schema.sql`; not materialized as a DB constraint. |
 | Value range — `budget` | Pipeline + test | staging nulls bad budget + `budget IS NULL OR budget >= 0` source test | Intended `CHECK` declared in `schema.sql`. |
 | Value range — `date` | Pipeline + test | intermediate date-validity filter + source date test | — |
@@ -79,7 +89,7 @@ Column types match the live warehouse exactly (verified via
    dedicated intermediate model.
 4. **DuckDB FK idempotency trade-off.** A declared FK constraint breaks
    `CREATE OR REPLACE` re-runs in DuckDB (issue #425). FK integrity is
-   therefore enforced by the pipeline (semi-join filter in
+   therefore enforced by the pipeline (inner-join filter in
    `int_timesheets_validated`) and detected by `relationships` tests, not by a
    DB constraint. The FK is declared in `schema.sql` as the *intended* design.
 5. **Soft "review" rows are kept, not dropped.** Dimension rows with a valid
@@ -87,8 +97,10 @@ Column types match the live warehouse exactly (verified via
    surfaced by warn-severity tests, so the analyst can review them rather than
    silently losing data.
 6. **md5 surrogate `timesheet_id`.** The fact PK is an md5 hash of the natural
-   timesheet key, giving a stable, collision-resistant PK independent of
-   source-row ordering.
+   timesheet key (`employee_id`, `project_id`, `date`) — the grain is one
+   timesheet per employee/project/day; `hours` is a measure, not part of the key.
+   The hash is stable, collision-resistant, and independent of source-row
+   ordering.
 7. **Run pattern is `dbt run` then `dbt test`.** `dbt build` is avoided because
    dbt-Fusion skips downstream models when upstream/source tests error, which
    would silently drop mart builds. `run` + `test` keeps model materialization

@@ -1,0 +1,35 @@
+docs/.docglow-column-lineage-failures.log
+  s_c63aaa8eb8080a::t_9d43081e5f62eb 1-15
+dbt/models/intermediate/_intermediate.yml
+  s_c63aaa8eb8080a::t_312a2f99a2f014 5,12,15,18,21,24
+docs/docglow-data.json
+  s_c63aaa8eb8080a::t_749ce952484e14 1
+dbt/models/staging/_staging.yml
+  s_c63aaa8eb8080a::t_089c1473de3674 3-4,8,10-11,15,18,20,22,25,28,30,32,35,38,40,42,44,46
+dbt/models/marts/_marts.yml
+  s_c63aaa8eb8080a::t_03e678fd739c48 7-9,13,20,25,28,31,38,43,46,49,56,61,69,72,75,83,86,89,92,95,102,110,113,121,131,139,142,145,154,164,167,170,173,176,179
+dbt/models/intermediate/int_timesheets_validated.sql
+  s_c63aaa8eb8080a::t_5009f0ae653cc8 7
+dbt/models/staging/_sources.yml
+  s_c63aaa8eb8080a::t_822f3a5d6746ea 6-14,18,21,26,32,38,41,46,52,69,76,84,92,96
+docs/.docglow-column-lineage-cache.json
+  s_c63aaa8eb8080a::t_749ce952484e14 1
+docs/.gitignore
+  s_c63aaa8eb8080a::t_82ee9b7bbf8226 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "446b6f0b6af2b9b530713b6dda64713a10f69b8e",
+  "prompts": {},
+  "sessions": {
+    "s_c63aaa8eb8080a": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f381f-3552-765a-b9fc-43c7f19564d8",
+        "model": "glm-5.2:cloud"
+      },
+      "human_author": "emmver <emmvereroudakis@gmail.com>"
+    }
+  }
+}

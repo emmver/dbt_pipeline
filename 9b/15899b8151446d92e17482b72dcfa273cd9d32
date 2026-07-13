@@ -1,0 +1,31 @@
+dbt/models/marts/dim_employees.sql
+  s_c63aaa8eb8080a::t_1414fcfe0500b4 1-6
+dbt/models/intermediate/int_timesheets_validated.sql
+  s_c63aaa8eb8080a::t_1414fcfe0500b4 1-10
+dbt/models/marts/dim_projects.sql
+  s_c63aaa8eb8080a::t_1414fcfe0500b4 1-7
+dbt/models/marts/agg_hours_per_project_monthly.sql
+  s_c63aaa8eb8080a::t_1414fcfe0500b4 1-6
+dbt/models/marts/fct_timesheets.sql
+  s_c63aaa8eb8080a::t_1414fcfe0500b4 1-8
+docs/docglow-data.json
+  s_c63aaa8eb8080a::t_69bc364e38ca65 1
+dbt/models/marts/agg_hours_per_project.sql
+  s_c63aaa8eb8080a::t_1414fcfe0500b4 1-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.13",
+  "base_commit_sha": "9b15899b8151446d92e17482b72dcfa273cd9d32",
+  "prompts": {},
+  "sessions": {
+    "s_c63aaa8eb8080a": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f381f-3552-765a-b9fc-43c7f19564d8",
+        "model": "glm-5.2:cloud"
+      },
+      "human_author": "emmver <emmvereroudakis@gmail.com>"
+    }
+  }
+}

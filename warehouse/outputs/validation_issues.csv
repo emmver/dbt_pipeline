@@ -1,13 +1,13 @@
 check_name,source_table,column,severity,status,failing_row_count,sample_failing_values,how_handled
-unique,projects,project_id,error,rejected,3,"P001, P007, P026",dropped in stg_projects (dup survivor kept)
-not_null,projects,project_id,error,rejected,1,1 null id row (project_name='Unnamed Initiative'),dropped in stg_projects (null PK row)
-unique,employees,employee_id,error,rejected,2,"E001, E014",dropped in stg_employees (dup survivor kept)
-hours_in_range,timesheets,hours,error,rejected,5,"-3, 25, <null>, not_a_number, seven",dropped in stg_timesheets (single-source reject)
-unique_natural_key,timesheets,employee_id+project_id+date,error,rejected,2,"E001/P001/11/03/2024, E005/P007/08/01/2024","dropped in stg_timesheets (exact-dup, one row kept per group)"
-not_null,timesheets,employee_id,error,rejected,1,1 row with null employee_id (project_id=P001),dropped in stg_timesheets (missing employee_id)
-relationships,timesheets,employee_id -> employees,error,rejected,2,"E099, E050",dropped in int_timesheets_validated (dangling FK filter)
-relationships,timesheets,project_id -> projects,error,rejected,2,P999,dropped in int_timesheets_validated (dangling FK filter)
-not_null,projects,project_name,warn,review,1,P013,"kept in dim, flagged warn"
-invalid_budget,projects,budget,warn,review,3,"P008(55000-60000), P019(-5000), P032(<null>)","kept in dim, flagged warn"
-not_null,employees,name,warn,review,1,E013,"kept in dim, flagged warn"
-not_null,employees,role,warn,review,1,E021,"kept in dim, flagged warn"
+unique,projects,project_id,hard,rejected,3,"P001, P007, P026",dropped in stg_projects (dup survivor kept)
+not_null,projects,project_id,hard,rejected,1,1 null id row (project_name='Unnamed Initiative'),dropped in stg_projects (null PK row)
+unique,employees,employee_id,hard,rejected,2,"E001, E014",dropped in stg_employees (dup survivor kept)
+hours_in_range,timesheets,hours,hard,rejected,5,"-3, 25, <null>, not_a_number, seven",dropped in stg_timesheets (single-source reject)
+unique_natural_key,timesheets,employee_id+project_id+date,hard,rejected,2,"E005/P007/08/01/2024, E001/P001/11/03/2024","dropped in stg_timesheets (exact-dup, one row kept per natural key)"
+not_null,timesheets,employee_id,hard,rejected,1,1 row with null employee_id (project_id=P001),dropped in stg_timesheets (missing employee_id)
+relationships,timesheets,employee_id -> employees,hard,rejected,2,"E099, E050",dropped in int_timesheets_validated (dangling FK filter)
+relationships,timesheets,project_id -> projects,hard,rejected,2,P999,dropped in int_timesheets_validated (dangling FK filter)
+not_null,projects,project_name,soft,review,1,P013,"kept in dim, flagged warn"
+invalid_budget,projects,budget,soft,review,3,"P008(55000-60000), P019(-5000), P032(<null>)","kept in dim, flagged warn"
+not_null,employees,name,soft,review,1,E013,"kept in dim, flagged warn"
+not_null,employees,role,soft,review,1,E021,"kept in dim, flagged warn"

@@ -68,6 +68,11 @@ DBT_PROFILES_DIR=. ../.venv/bin/dbt run
 
 # 3. Run tests (source tests on main_raw + mart grain tests)
 DBT_PROFILES_DIR=. ../.venv/bin/dbt test
+
+# 4. Export the deliverable CSVs (cleaned datasets + validation report)
+cd ..
+.venv/bin/python scripts/export_outputs.py        # 4 mart tables -> warehouse/outputs/*.csv
+.venv/bin/python build_validation_issues.py        # validation_issues.csv from the test audit tables
 ```
 
 **Important notes**
@@ -383,6 +388,8 @@ accepted counts (331 / 35 / 40) every time.
 | Deliverable | Path |
 |---|---|
 | Raw loader | `scripts/load_raw.py` |
+| Output exporter | `scripts/export_outputs.py` (mart tables to CSVs) |
+| Validation report builder | `build_validation_issues.py` (audit tables to `validation_issues.csv`) |
 | dbt project config | `dbt/dbt_project.yml`, `dbt/profiles.yml` |
 | Staging models | `dbt/models/staging/` |
 | Intermediate model | `dbt/models/intermediate/int_timesheets_validated.sql` |

@@ -1,332 +1,332 @@
 timesheet_id,employee_id,employee_name,employee_role,project_id,project_name,project_budget,date,hours
-002592f9863a8cce9fcfc3697c97ee81,E015,Samuel Osei,Backend Engineer,P008,API Gateway Consolidation,,2024-03-21,8.00
-0128529cee7bd0f036b82918f93119c5,E009,Fatima Al-Hassan,Data Analyst,P003,Customer Portal v2,60000.00,2024-05-26,8.00
-0209af0f5c30e1a1dd5b05afa9a352ab,E008,Oliver Marsh,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-04-21,7.00
-024c834136bdca10bfeda12e645e8076,E004,Tom Whitfield,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-01-08,4.00
-025d80761834acf2bdb9f831ea17c7b3,E032,Mei Lin,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-02-25,7.00
-0266273d0a22dcefcd85c1a36ebbca1d,E007,Priya Sharma,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-01-09,7.00
-02dcf632e39b4cdc18b39edd0315e8b1,E014,Anouk Vermeer,Data Scientist,P031,Customer Churn Model,78000.00,2024-02-20,8.00
-040b9bfbb40ea1ec1868310670f10fa9,E011,Yuki Tanaka,Data Engineer,P012,Real-Time Alerting System,88000.00,2024-01-16,8.00
-04e95c063c6c66a39c3dfc0bb4a399a2,E015,Samuel Osei,Backend Engineer,P008,API Gateway Consolidation,,2024-01-11,8.00
-051a3d6b1f5e1af9e9dc85afbbe8a6d3,E005,Lena Bauer,Data Scientist,P005,Mobile App Launch,200000.00,2024-01-24,9.00
-0597559dd4021a49943e25daee0c50d1,E019,Marcus Bell,DevOps Engineer,P029,Observability Stack,39000.00,2024-02-17,7.50
-08b69907031823f7e4c1b32667df5935,E032,Mei Lin,Data Engineer,P018,Event Streaming Platform,110000.00,2024-05-08,6.00
-08ecf42ddf619322fdef8a0311c0521c,E022,Aisha Mohammed,Data Engineer,P018,Event Streaming Platform,110000.00,2024-04-25,6.50
-090f0abc4763daafe9aa2b8b9edca688,E013,,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-01-11,8.00
-099fbd2b675faad4a6e394a9884c6198,E019,Marcus Bell,DevOps Engineer,P005,Mobile App Launch,200000.00,2024-05-12,8.00
-09d5f3e3cc6eba7fd0242107961907a6,E007,Priya Sharma,Data Engineer,P005,Mobile App Launch,200000.00,2024-05-09,7.50
-09dbb65e7d798473b9071ddbe49555eb,E001,Sarah Okonkwo,Data Engineer,P005,Mobile App Launch,200000.00,2024-05-09,8.00
-0b3124b677730ef5cb030a12feaf9483,E036,Astrid Lindgren,Data Scientist,P031,Customer Churn Model,78000.00,2024-02-21,9.00
-0b4f0f067edd0a532673bab46f13329b,E017,Ravi Menon,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-04-07,8.00
-0c2d0b6d194b4dca4f4b0c8b09c9db0b,E001,Sarah Okonkwo,Data Engineer,P005,Mobile App Launch,200000.00,2024-01-23,8.00
-0df3ff4932a5841163f9fe310fa59a95,E008,Oliver Marsh,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-04-08,8.00
-0e40b0fa84698bcc48c125a44a3fb55c,E015,Samuel Osei,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-04-29,6.50
-0ef3697e2d50e93cde5af9f1b4fa214b,E003,Maria Gonzalez,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-05-14,6.50
-0f97af89fa6c92177e5306ed915c31ad,E006,Chris Ndukwe,DevOps Engineer,P005,Mobile App Launch,200000.00,2024-01-25,8.00
-100ddb1c0432f3f6b8cae913a64dc80d,E033,Andrei Popov,DevOps Engineer,P029,Observability Stack,39000.00,2024-03-19,8.00
-105a088c5b4452c60c67dffea476966c,E019,Marcus Bell,DevOps Engineer,P029,Observability Stack,39000.00,2024-03-19,7.00
-11dc4c0f61a51a9fc304724ddbfb6de8,E032,Mei Lin,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-05-07,8.00
-123b96e9459a16a8db3c170a36b34056,E011,Yuki Tanaka,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-01-28,8.00
-12408256f7f71d1889492b647a979f09,E001,Sarah Okonkwo,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-03-11,7.50
-125b4753376f4f1eec0e85d9912e6d2b,E017,Ravi Menon,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-01-14,8.00
-12666a81993870fed774dde8d615d076,E039,Nils Bergström,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-02-17,7.00
-128fa9eb2abe9f7671c39673ecf141ad,E031,Jack Reynolds,Backend Engineer,P008,API Gateway Consolidation,,2024-05-13,7.50
-1532aee3a459d59f27bd5b1a523bddc8,E020,Ingrid Halvorsen,Data Analyst,P003,Customer Portal v2,60000.00,2024-03-12,6.50
-1563aaaf9494a1307aabaf885af0109b,E026,Valentina Rossi,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-05-29,7.00
-165128e611af333040cb492223abb501,E007,Priya Sharma,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-04-07,8.00
-16b93e5ee0ad10bf036ddd86a95c85df,E017,Ravi Menon,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-03-06,8.00
-17579edd638f222b0f2e952f9e376d62,E037,Femi Adeyemi,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-04-24,8.00
-1af52380435689d2e63b64aadb5bd07e,E001,Sarah Okonkwo,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-01-08,7.50
-1b69119ac6d7dc47eaf0bc9bb8f26b3c,E015,Samuel Osei,Backend Engineer,P008,API Gateway Consolidation,,2024-05-12,8.00
-1b97f1413f3111d02fae342344a6fd7a,E003,Maria Gonzalez,Backend Engineer,P008,API Gateway Consolidation,,2024-03-21,7.50
-1bdf02d4ce8c468c956a2039ffd635de,E003,Maria Gonzalez,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-04-10,8.00
-1c52fe70c7c5832bbcb626524a0d5c34,E009,Fatima Al-Hassan,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-02-27,8.00
-1c93a77c6e8e8a9586bf1f6161871973,E018,Nina Johansson,Analytics Engineer,P025,Search Relevance Improvement,84000.00,2024-02-27,7.00
-1c9f0b468d7712bd799b9ae826b3fc75,E005,Lena Bauer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-03-05,9.00
-1d45d4cfcaf70445a534b65f0b9f8e4b,E022,Aisha Mohammed,Data Engineer,P018,Event Streaming Platform,110000.00,2024-05-08,8.00
-1d8ca6881238269b6fa880a870c0cea1,E006,Chris Ndukwe,DevOps Engineer,P005,Mobile App Launch,200000.00,2024-03-27,8.00
-202f35b66bf722c651c0db0c7378e933,E032,Mei Lin,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-02-11,7.00
-207996bbf713e8d5540ffa25a8b772f7,E005,Lena Bauer,Data Scientist,P031,Customer Churn Model,78000.00,2024-02-20,9.00
-2167d8e882dce19d999a4cf79f4d7b84,E017,Ravi Menon,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-02-24,8.00
-21b79115662dcfbb9e704a38b592818f,E031,Jack Reynolds,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-02-14,8.00
-233206b38fc1946a11ac0e233f0c030a,E003,Maria Gonzalez,Backend Engineer,P008,API Gateway Consolidation,,2024-01-15,8.00
-23fc1b18f6e107e218f23473068f7843,E033,Andrei Popov,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-04-18,6.00
-24c06dfb652cbec9ebcbf03a21ddb781,E034,Simone Bianchi,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-05-30,8.00
-25b6c884b62d67436d4313d7128a58c0,E010,Daniel Kovač,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-05-30,8.00
-26db7aef0ab4295c1b72314cda71b4f5,E011,Yuki Tanaka,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-02-24,7.00
-27a0cff7e0b20cd7f9f333b0e5a6448f,E020,Ingrid Halvorsen,Data Analyst,P003,Customer Portal v2,60000.00,2024-01-15,6.00
-27accce6d7dc35d5025b8642695848bc,E017,Ravi Menon,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-04-28,8.00
-27d213d71b4e575ee878e14fb93b8fb5,E016,Claire Fontaine,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-03-14,5.00
-28662877e0a56d165cbeb6604d7d39dc,E007,Priya Sharma,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-03-11,8.00
-297722157514577e4e9222d8648165dd,E038,Claudia Reyes,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-05-23,4.50
-2b270f2308e39c4f81d3c69b35c33a21,E001,Sarah Okonkwo,Data Engineer,P002,Data Warehouse Migration,85000.00,2024-01-15,8.00
-2b379044b7367dd94c6e195e1a614720,E029,Tariq Hassan,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-05-21,8.00
-2cb78e49a9c4a854ced4788316e290df,E013,,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-04-30,6.00
-2dd8dc27f4b1232d912ae6cf35bd5c6c,E022,Aisha Mohammed,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-05-20,6.50
-2df45a0a985568b33efbc39cd91f60eb,E031,Jack Reynolds,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-03-04,8.00
-2ea60c5f4f94e79058fbf8b0b289528a,E040,Soraya Mohammadi,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-02-28,6.00
-2f7055e61dc1643e7dcad14fabe5eb1c,E028,Hannah Müller,Product Manager,P015,Self-Serve BI Rollout,47000.00,2024-04-15,4.00
-303e99b028d681d3238a413741a7821b,E026,Valentina Rossi,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-05-16,8.00
-306b2dfa1d1a2fddf4b26588074c550d,E003,Maria Gonzalez,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-03-03,8.00
-320eaa7587827ca0eebe9a502b810f72,E039,Nils Bergström,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-03-04,7.00
-333135383c37c7f2a7eeb8df5b5b02a6,E011,Yuki Tanaka,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-02-07,7.00
-33fee88d326e18f49ed498435c47ec87,E036,Astrid Lindgren,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-05-21,8.00
-353139f3890df0c2e27b8065050bce06,E040,Soraya Mohammadi,Data Analyst,P026,Experimentation Platform,67000.00,2024-05-16,6.00
-35c137f98921bc04ae0dd353cfac3aed,E034,Simone Bianchi,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-02-12,7.00
-3664acde83349ccf0cd84589b05c3f5a,E037,Femi Adeyemi,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-03-10,8.00
-37077f35dd022010c6c516fdcf44c5a4,E003,Maria Gonzalez,Backend Engineer,P005,Mobile App Launch,200000.00,2024-01-24,8.00
-3749bcdff344d404d0e080f018b63c93,E021,Leo Dubois,,P004,Internal Analytics Dashboard,45000.00,2024-01-30,6.00
-37bd9d1936c0ef9ccc5df013a54b113a,E040,Soraya Mohammadi,Data Analyst,P026,Experimentation Platform,67000.00,2024-02-13,5.50
-38021044a5e455d0106f173e5b3eb922,E019,Marcus Bell,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-05-28,7.50
-3824c28c91270484e9704f0bf8284597,E001,Sarah Okonkwo,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-05-19,8.00
-38a2589b5ffe4c3e1921fdb815b2d104,E030,Elena Popescu,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-02-28,7.00
-39a08f0dcfa05cffc34252ff7b121890,E004,Tom Whitfield,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-03-14,4.00
-39a5f6e2db7e6338079e4b5fd188e334,E028,Hannah Müller,Product Manager,P015,Self-Serve BI Rollout,47000.00,2024-02-19,4.00
-39f716b08981a5618d58092aac587ab7,E018,Nina Johansson,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-04-21,8.00
-3a6901ad7555e84908a846334d4b87b1,E007,Priya Sharma,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-04-28,7.00
-3ca85dfd05d20d602b92a42be6eb286c,E030,Elena Popescu,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-04-30,8.00
-3d761e17b0efbd23ebc8f604a628201f,E023,Stefan Richter,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-04-17,9.00
-3df4754ed4a5292270b7e075f07f7e86,E027,Kofi Asante,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-02-25,8.00
-3e618abc5eb9154e4120742e7a44ea32,E015,Samuel Osei,Backend Engineer,P008,API Gateway Consolidation,,2024-01-29,8.00
-3ee432487f3d696c4cd041864225838c,E023,Stefan Richter,Data Scientist,P031,Customer Churn Model,78000.00,2024-04-04,9.00
-40d94edb941d595647e74ede6b3c7aa4,E018,Nina Johansson,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-05-16,8.00
-41ec0e4557a199d2089a6d35d7ca1286,E010,Daniel Kovač,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-04-10,7.00
-4247a86073831e01dc40321b2d49d6d0,E026,Valentina Rossi,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-01-17,6.00
-43abc8f819165fa3b0937dcb71f41df9,E006,Chris Ndukwe,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-05-28,8.00
-43ca8633126d0b01025d54b218247f91,E003,Maria Gonzalez,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-02-13,8.00
-451ab6b875ddcd0c00ac8dd98ee62d45,E018,Nina Johansson,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-05-29,8.00
-452352d1865f161992aa1d3703036c29,E003,Maria Gonzalez,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-02-01,8.00
-462925618a6e01074f926d8bb68cca03,E015,Samuel Osei,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-03-03,8.00
-47a6417e03a1b713552e5ec506e2ee99,E019,Marcus Bell,DevOps Engineer,P029,Observability Stack,39000.00,2024-05-02,7.00
-497198d0cee8d8704374859e450a2389,E027,Kofi Asante,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-02-05,6.00
-49745db07fa5e7b153fb3de4bf678fba,E001,Sarah Okonkwo,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-01-07,8.00
-4af414387b5716fb0f6426918051e4d8,E013,,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-01-28,6.00
-4c9658c7fb44f1c29dea92e46f8872b7,E038,Claudia Reyes,Product Manager,P015,Self-Serve BI Rollout,47000.00,2024-02-19,3.00
-51029bbf8883e89240a298aaae017d3c,E025,Patrick O'Brien,Data Analyst,P003,Customer Portal v2,60000.00,2024-05-23,8.00
-510f4c78394d087e3f65409ee81f45ae,E029,Tariq Hassan,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-04-17,8.00
-51998ccb6a4ebafadd9cdf6bf667fcb0,E029,Tariq Hassan,Data Scientist,P031,Customer Churn Model,78000.00,2024-05-05,9.00
-523bd343208d39d61e85e9647602f9a1,E002,James Patel,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-01-15,7.50
-5496d6989e835680070f79abea57582e,E004,Tom Whitfield,Product Manager,P015,Self-Serve BI Rollout,47000.00,2024-02-18,4.00
-55a85a634f6382736370271f84c633aa,E037,Femi Adeyemi,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-01-22,8.00
-56b4ea4d24a1aec24eca7aa4c6be4061,E004,Tom Whitfield,Product Manager,P015,Self-Serve BI Rollout,47000.00,2024-04-14,4.50
-57364a4b0d4a154006c83ec04c85e301,E008,Oliver Marsh,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-01-16,7.00
-5797a4e3f32890ff88ccec8a91d74234,E031,Jack Reynolds,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-01-21,8.00
-58308d6290bd7477a18179ab7c2615fe,E008,Oliver Marsh,Analytics Engineer,P025,Search Relevance Improvement,84000.00,2024-02-26,6.00
-587474cf89c5a8cc3f199c397d0cb2d1,E014,Anouk Vermeer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-04-16,7.50
-5a13c07d48d85528accd0031ee741c04,E018,Nina Johansson,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-01-14,7.00
-5a1eae457ad2e3055cdf2ea14707a529,E034,Simone Bianchi,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-04-09,6.00
-5a64bf9af5f79bb3b12c97bcae300b59,E033,Andrei Popov,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-05-28,8.00
-5a9d4f67154ef1902594aede527359e7,E036,Astrid Lindgren,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-02-06,8.50
-5b21c6d635ab6ef0604b94c58d534edb,E019,Marcus Bell,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-01-30,8.00
-5b37c62cafa4af22bd9ec1ccd9cbe6ce,E016,Claire Fontaine,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-01-14,5.00
-5c012eb52f533340b9608033d1494735,E001,Sarah Okonkwo,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-04-02,8.00
-5c2a650be7a02bade6dda9e50416b715,E022,Aisha Mohammed,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-02-25,6.50
-5c66ed9362a289fec590dee7af33b01a,E013,,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-03-28,8.00
-5ca7418b7e88320824415b5985edccf9,E007,Priya Sharma,Data Engineer,P005,Mobile App Launch,200000.00,2024-01-25,7.00
-5ec9f5af363b4aec04cf1f33b7019eba,E012,Brendan Walsh,Project Manager,P015,Self-Serve BI Rollout,47000.00,2024-02-18,3.50
-5f7e4e20884be9e210216ade04ac7126,E016,Claire Fontaine,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-01-29,5.00
-5f8905c189ced529e50b761cf1c34532,E006,Chris Ndukwe,DevOps Engineer,P029,Observability Stack,39000.00,2024-02-17,8.00
-5fdadd1f0fdee8ed9e5e6301564dfc42,E005,Lena Bauer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-02-04,9.00
-605711bb1da347db502b8199861f223a,E014,Anouk Vermeer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-01-11,6.00
-622aa9a888646bf823cb822845becd07,E002,James Patel,Data Analyst,P003,Customer Portal v2,60000.00,2024-02-01,7.00
-63115a487a5ce46c2b3be7c85508f8d4,E039,Nils Bergström,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-05-15,8.00
-63f9f356fa02e51bf4f1640b33f905b1,E022,Aisha Mohammed,Data Engineer,P018,Event Streaming Platform,110000.00,2024-01-31,8.00
-665624e575c507a587ea43f8764bcd51,E024,Grace Kim,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-04-30,8.00
-66d50a56664c7fd7a452e706b2d7d025,E007,Priya Sharma,Data Engineer,P005,Mobile App Launch,200000.00,2024-03-27,6.50
-69c4441db1f1fcf8a4f99cd61353f8dc,E033,Andrei Popov,DevOps Engineer,P029,Observability Stack,39000.00,2024-05-02,8.50
-6a1a299dab20a123b6309e45f821d2e5,E025,Patrick O'Brien,Data Analyst,P003,Customer Portal v2,60000.00,2024-03-13,8.00
-6a7e4c1c727e87018bd9cf792904fc11,E008,Oliver Marsh,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-03-19,6.50
-6a83daf47fc82cc6d85fc6a17e118b73,E003,Maria Gonzalez,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-04-29,7.50
-6dceb36f9e5116a9c8d1c901287733a9,E035,David Ogundimu,Data Analyst,P003,Customer Portal v2,60000.00,2024-03-13,7.50
-6e5a621be568f5668f9afb58e5b5dbc7,E027,Kofi Asante,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-05-07,8.00
-6edbcb7ad8196eb7f0cf6a2f0b79fb81,E035,David Ogundimu,Data Analyst,P003,Customer Portal v2,60000.00,2024-05-23,6.50
-6fa9233d641d025b087205dddd5e9268,E017,Ravi Menon,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-04-03,8.00
-6ff980848dc66e6368d48f764f4afd33,E028,Hannah Müller,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-01-18,4.00
-7001c5609ad86abca3f20d70fca75fc7,E036,Astrid Lindgren,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-01-22,9.00
-703806fedd3094cd59ab52de21d22d25,E027,Kofi Asante,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-02-10,8.00
-7068a577fc865ea86abcc197042cf75b,E002,James Patel,Data Analyst,P026,Experimentation Platform,67000.00,2024-02-11,6.00
-7080fc1ccaffce780fd9987706e42746,E038,Claudia Reyes,Product Manager,P015,Self-Serve BI Rollout,47000.00,2024-04-15,3.50
-70e8a374161060764a34d19fa000f838,E022,Aisha Mohammed,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-05-06,6.50
-71ea429f3dc2a7343ec474b760a4279d,E011,Yuki Tanaka,Data Engineer,P012,Real-Time Alerting System,88000.00,2024-05-08,7.00
-7209aa1c6de38a407bc380a7245de305,E024,Grace Kim,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-05-30,8.00
-72e47de18684c35a45da35ad54157a5b,E008,Oliver Marsh,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-05-15,6.50
-7343340a91c4ba7fba7786cc573ef65a,E002,James Patel,Data Analyst,P026,Experimentation Platform,67000.00,2024-05-15,7.00
-74db1229a8657e7feb541e7114d3b2f6,E023,Stefan Richter,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-03-07,8.00
-7721d2be6258d011007d5bdd13c9c1f1,E002,James Patel,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-04-22,7.00
-77cacc605d3b43a26c88af624afeed20,E014,Anouk Vermeer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-03-06,7.50
-784fd11d9bc5a51bb6c293f1e84c75d7,E039,Nils Bergström,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-03-25,8.00
-7883a174aaef758a52237ce62d50f92c,E019,Marcus Bell,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-03-18,8.00
-78ac0aee273293bcbfaa4759077392cc,E033,Andrei Popov,DevOps Engineer,P029,Observability Stack,39000.00,2024-02-18,8.00
-794cce6b388eba8128a364de837fc68e,E005,Lena Bauer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-01-15,10.00
-7a55d7524e58c0e3dfb8c39197a9e1b7,E014,Anouk Vermeer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-02-05,8.00
-7a6d0141445a4d43f35e74ea685c2987,E002,James Patel,Data Analyst,P003,Customer Portal v2,60000.00,2024-03-12,8.00
-7a70ca5e0a61526a4888299e4f20ba7f,E009,Fatima Al-Hassan,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-04-23,8.00
-7b9964a08e7ffbb81d56655b9ab81ab6,E022,Aisha Mohammed,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-04-03,6.00
-7bb7501ab379903222d67ea9520e5f1e,E003,Maria Gonzalez,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-01-07,8.00
-7bff0bb939d4161ed8e2d86d94b0b8bc,E002,James Patel,Data Analyst,P005,Mobile App Launch,200000.00,2024-01-23,6.50
-7d3cfab95cbbb02f25cfd6a682c81fa2,E021,Leo Dubois,,P004,Internal Analytics Dashboard,45000.00,2024-05-01,7.00
-7de9a3644df2be2adc4ed1e3a440efc4,E034,Simone Bianchi,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-01-21,7.00
-7eafd9d0483f4141b35828c708e5a7e4,E034,Simone Bianchi,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-03-20,8.00
-7ff35cd3595d4750f7814f2a5ad0f9c2,E014,Anouk Vermeer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-05-20,7.50
-82837f09c22e13fc37b19466cc9c6f94,E037,Femi Adeyemi,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-05-07,7.50
-8286345e4565536be3aced7c46d350f4,E006,Chris Ndukwe,DevOps Engineer,P029,Observability Stack,39000.00,2024-03-18,8.00
-837b455c3db3dff343bccaf1c7d7a237,E040,Soraya Mohammadi,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-04-30,7.50
-83bd67ff0b984228aca5411b1531993b,E027,Kofi Asante,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-04-25,7.50
-8402797faadd94951d6a8652f812888c,E025,Patrick O'Brien,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-02-27,8.00
-841070e70fc5ddd582268ed9e22486c0,E031,Jack Reynolds,Backend Engineer,P008,API Gateway Consolidation,,2024-03-24,8.00
-84b0cd9cb0a743c2649f34b6636b013e,E040,Soraya Mohammadi,Data Analyst,P003,Customer Portal v2,60000.00,2024-03-13,6.00
-85704e51607a4f961749ae14787e9a71,E006,Chris Ndukwe,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-04-18,7.50
-85bbddff4c6d5e866d880dc5e8390076,E017,Ravi Menon,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-02-10,8.00
-8612671bc7eef4fbfacce01a039b9c65,E017,Ravi Menon,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-03-11,6.00
-86c9fc08c89a0ab9d6b2360b4f478e59,E016,Claire Fontaine,Product Manager,P015,Self-Serve BI Rollout,47000.00,2024-02-19,5.00
-87b549993b931053bd3ea753b351e065,E029,Tariq Hassan,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-02-06,8.00
-899204525df3d4e54b020307cf530531,E026,Valentina Rossi,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-04-22,6.50
-89c0fa847fe22a802cd6c098bea5fd58,E015,Samuel Osei,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-04-10,8.00
-8ac844084e1defec1b3d9628ad767005,E018,Nina Johansson,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-01-30,7.00
-8b90279acddc99cdd34eddc8ab75f097,E020,Ingrid Halvorsen,Data Analyst,P003,Customer Portal v2,60000.00,2024-05-23,7.00
-8d0e1a985d812a993b4cc55585e47ca0,E019,Marcus Bell,DevOps Engineer,P005,Mobile App Launch,200000.00,2024-03-27,8.00
-8d2535feb56d817652746feb69feb649,E036,Astrid Lindgren,Data Scientist,P031,Customer Churn Model,78000.00,2024-05-05,8.00
-8dd00e85fd9edb625721b35dd868e7a2,E018,Nina Johansson,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-03-20,8.00
-8e850dfa787ee250e61ed2b33315f027,E012,Brendan Walsh,Project Manager,P015,Self-Serve BI Rollout,47000.00,2024-04-14,3.00
-901f9f1bd9851e6d21641c0611aeddc3,E028,Hannah Müller,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-03-17,4.00
-90f0a3fb7f6437ee91879153675c65d0,E040,Soraya Mohammadi,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-01-23,7.00
-915335b4a9b8c64d5fd181aa641a9e6b,E010,Daniel Kovač,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-01-10,7.50
-9182bc26202fa28f61aecbd0d438873b,E010,Daniel Kovač,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-03-03,7.50
-91cdb21a034c63c588d6c382a49479b5,E032,Mei Lin,Data Engineer,P018,Event Streaming Platform,110000.00,2024-03-10,7.00
-93567ead45dd800246e6fc307f2a27ca,E004,Tom Whitfield,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-05-22,5.00
-9357265e3ea2cce4f8a10022a1f9863e,E008,Oliver Marsh,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-02-11,7.50
-94443abdbfa0a1913961c8b62f5404fc,E007,Priya Sharma,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-02-24,8.00
-95b4282e48818e75f833e56c92f05ac1,E001,Sarah Okonkwo,Data Engineer,P005,Mobile App Launch,200000.00,2024-03-26,8.00
-9701b4bf6547addf2af5f591306d3cdb,E001,Sarah Okonkwo,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-03-05,8.00
-994606201daf4921134e763289769f22,E024,Grace Kim,Backend Engineer,P008,API Gateway Consolidation,,2024-05-13,6.00
-9a7f8f6626f48edfad1076360e988eb7,E010,Daniel Kovač,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-03-24,8.00
-9ab0ae1eedf983d838342b35fe120da1,E005,Lena Bauer,Data Scientist,P030,Feature Store Build-Out,115000.00,2024-04-03,7.00
-9aef7ff08729d490d4bb6d073f2cba4d,E001,Sarah Okonkwo,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-04-28,8.00
-9bbd9258b0bdb96cd1194e9bee403007,E024,Grace Kim,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-02-14,6.50
-9c0ba0086f4a2c9846628e452b2ea974,E022,Aisha Mohammed,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-02-10,6.50
-9c7bd853a6ae011128979784a9857e72,E040,Soraya Mohammadi,Data Analyst,P003,Customer Portal v2,60000.00,2024-05-26,7.50
-9e2b9b04d68ce93ad21f4f3b9da0fc90,E026,Valentina Rossi,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-03-20,7.00
-9f1e1e78098d38d2de800326923f2257,E036,Astrid Lindgren,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-03-07,8.00
-9f3b8eeb97357477ce0d3099a9e0f82f,E037,Femi Adeyemi,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-02-06,8.00
-9f4887c9a8844e021cc5f31e810126cc,E002,James Patel,Data Analyst,P003,Customer Portal v2,60000.00,2024-01-07,6.00
-a0d2db2e0239b313e4f7d5bc8c2d4cd6,E019,Marcus Bell,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-04-18,8.00
-a12b3b29b0d171f635af1d2d52add9fb,E023,Stefan Richter,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-01-17,9.00
-a277d04b86795e7ecb236f74bb8900d8,E006,Chris Ndukwe,DevOps Engineer,P005,Mobile App Launch,200000.00,2024-05-09,7.00
-a34222cad269cdbd356b6ab9b1e8e2c1,E017,Ravi Menon,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-01-29,8.00
-a6fad4103cbbfd1ac7e96864bc977726,E007,Priya Sharma,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-01-16,8.00
-a82e1b3889f98b5198290c483d519ba4,E025,Patrick O'Brien,Data Analyst,P003,Customer Portal v2,60000.00,2024-01-31,6.00
-a88c32e11944d48567f00bdfd3e02cfc,E005,Lena Bauer,Data Scientist,P030,Feature Store Build-Out,115000.00,2024-05-06,7.00
-aa1536ed1f42bc0a89708bcb04a8b5ca,E033,Andrei Popov,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-03-18,6.00
-ab3bd1d03b10ea76323e8c2efdde55e0,E037,Femi Adeyemi,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-02-11,8.00
-ad4c30e35b10d387b1a32c14f21ff571,E025,Patrick O'Brien,Data Analyst,P003,Customer Portal v2,60000.00,2024-01-17,7.00
-ad96bbe7b2c5aa1fdaffcc8fe4a00627,E004,Tom Whitfield,Product Manager,P005,Mobile App Launch,200000.00,2024-01-24,5.00
-adc66fc011fec70336e842e6075a6f80,E031,Jack Reynolds,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-04-11,8.00
-af3056b831cadf6e4a99affbfda4da86,E024,Grace Kim,Backend Engineer,P008,API Gateway Consolidation,,2024-01-17,8.00
-b1a71e4eac22dd34485cd664e3d694b1,E026,Valentina Rossi,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-04-09,8.00
-b1cde67df5eb4517ac994f25dc24d1d0,E022,Aisha Mohammed,Data Engineer,P018,Event Streaming Platform,110000.00,2024-02-05,8.00
-b2a72b38b4e515ba3d57032fadede4f1,E018,Nina Johansson,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-04-08,7.00
-b371447ce6376b4dbfecaa0253da3af0,E039,Nils Bergström,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-04-30,8.00
-b5f7357dbb50f4ed36fde6e2be74a480,E024,Grace Kim,Backend Engineer,P008,API Gateway Consolidation,,2024-01-31,8.00
-b6134ac8755111f01b8844e0205d7561,E031,Jack Reynolds,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-05-14,8.00
-b7327ec86cf9de6ce18a15cf411dda3e,E026,Valentina Rossi,Analytics Engineer,P025,Search Relevance Improvement,84000.00,2024-02-28,6.50
-b82570e91106d57251508ede2745fc60,E017,Ravi Menon,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-02-05,7.50
-b8fcb6bf0ebe47f42800961a8dd52c91,E023,Stefan Richter,Data Scientist,P031,Customer Churn Model,78000.00,2024-02-21,7.50
-b9442b37910c80b29e03c8cf3001d5c7,E024,Grace Kim,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-04-11,6.50
-b967caebf167ac91717086e6dddd4045,E039,Nils Bergström,Backend Engineer,P008,API Gateway Consolidation,,2024-03-24,7.00
-bb03c7eacc9342121bffe219c97e4628,E017,Ravi Menon,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-05-20,8.00
-bb41ae21e9635abee9169a75784efab6,E001,Sarah Okonkwo,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-02-01,8.00
-bbaa9c4a40833640970d631bdc2f006e,E038,Claudia Reyes,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-01-22,3.00
-bbd0a1d24ca7561e619496611a7578f3,E022,Aisha Mohammed,Data Engineer,P018,Event Streaming Platform,110000.00,2024-01-16,6.50
-bc6a85ff6feb4ac636b0f3bc6bc5736c,E005,Lena Bauer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-04-15,9.00
-bd1abf11f72c6f48a99545a2566ce39a,E005,Lena Bauer,Data Scientist,P030,Feature Store Build-Out,115000.00,2024-02-07,8.00
-bd5d9dfab4e78ef398b617030bd83dc8,E025,Patrick O'Brien,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-04-23,6.50
-be188db9a3a854368186e83a8474dd8a,E011,Yuki Tanaka,Data Engineer,P012,Real-Time Alerting System,88000.00,2024-02-04,6.50
-beb1bcb1571337de917f3d92115b51c8,E011,Yuki Tanaka,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-04-16,8.00
-bf8990e54b49687b50e7892fda6bf9db,E024,Grace Kim,Backend Engineer,P008,API Gateway Consolidation,,2024-03-21,6.00
-c177c37918ce953ecbaf6b9200ecf5aa,E039,Nils Bergström,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-04-11,7.00
-c1edad2a167fbdc763d5000eb84c597b,E029,Tariq Hassan,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-03-07,9.00
-c231b1010c0d27749703c3e30174ca4d,E022,Aisha Mohammed,Data Engineer,P018,Event Streaming Platform,110000.00,2024-04-01,7.00
-c2bc23ff141d8baa5624d03bc2a4b8f9,E009,Fatima Al-Hassan,Data Analyst,P003,Customer Portal v2,60000.00,2024-03-12,7.00
-c3181e149fbd9ad4492b237f4b01c119,E008,Oliver Marsh,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-01-09,6.50
-c38796d48d8b3b8e43ef775ac91f5679,E010,Daniel Kovač,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-05-14,7.00
-c4abf1c5f0cbea72d90dd170d64bab34,E002,James Patel,Data Analyst,P005,Mobile App Launch,200000.00,2024-03-26,7.00
-c4b37da8a18eb77e068c14a02ec211b8,E036,Astrid Lindgren,Data Scientist,P031,Customer Churn Model,78000.00,2024-04-04,7.50
-c6464165deff3d109fdef535a744daec,E030,Elena Popescu,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-03-28,6.00
-c6dbe03a4ae6f250d863db874d0ac433,E029,Tariq Hassan,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-01-18,8.00
-c70522d60bef0d8e83bcae215746fd71,E003,Maria Gonzalez,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-05-30,7.50
-c7c3a71ad100ade1fef0f051abbcbc08,E001,Sarah Okonkwo,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-04-15,8.00
-c7db8461758239d5ffbb43a1a7f14f14,E011,Yuki Tanaka,Data Engineer,P012,Real-Time Alerting System,88000.00,2024-04-01,8.00
-c845faf6d3ea1382519351fd3b5ac0f5,E001,Sarah Okonkwo,Data Engineer,P031,Customer Churn Model,78000.00,2024-05-05,8.00
-c9591a55b8bdafa6909905c005028269,E035,David Ogundimu,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-02-28,8.00
-c9e16aa2d212f82a8f3b5bfa295c467a,E022,Aisha Mohammed,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-03-06,6.50
-ca5be0eea0bdbd77d4be42988a04432c,E027,Kofi Asante,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-03-10,8.00
-ca67f8172d9d232f675613f00d4e7695,E016,Claire Fontaine,Product Manager,P015,Self-Serve BI Rollout,47000.00,2024-04-14,5.00
-cad7344e542f3ce6feb8d9f1f91d3cc1,E026,Valentina Rossi,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-02-12,6.00
-cb33110fa124fcf7e8399cbf98c71b3f,E019,Marcus Bell,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-01-14,8.00
-cb3a7bd9fff30b97229fcc74a0f3aefa,E009,Fatima Al-Hassan,Data Analyst,P003,Customer Portal v2,60000.00,2024-01-10,8.00
-cbb9a731139a9b7f835005d046ed1468,E011,Yuki Tanaka,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-04-07,7.00
-cbc2ade7c6f039b1596de07322a7f6dd,E033,Andrei Popov,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-01-21,8.00
-cc88a35f507c6b75a64c5f0fd4e61fb1,E037,Femi Adeyemi,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-04-02,7.50
-ce82a53b43535e01e7bede1b7e169d68,E040,Soraya Mohammadi,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-04-24,6.00
-ceab4a3c0084e8c816bad73c2922dbe3,E012,Brendan Walsh,Project Manager,P004,Internal Analytics Dashboard,45000.00,2024-03-14,3.50
-cf1046b85d2f4009fc2862cf0f4c9b0e,E029,Tariq Hassan,Data Scientist,P031,Customer Churn Model,78000.00,2024-04-04,8.00
-cf65f6516db52a2250fda241498bcea4,E008,Oliver Marsh,Analytics Engineer,P005,Mobile App Launch,200000.00,2024-01-25,6.00
-cf9113ced62e13fecff5b3350e5da5cf,E039,Nils Bergström,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-01-22,8.00
-d1ced31fe8794c7c76d0d4c56d5daf69,E007,Priya Sharma,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-02-04,8.00
-d2baf3a54e067088cf45a61c067ec586,E037,Femi Adeyemi,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-02-26,8.00
-d56ee539900053d6739b91596fdf4ce2,E003,Maria Gonzalez,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-03-25,6.50
-d71bb8b372be5b7373325aea302e3c5b,E010,Daniel Kovač,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-02-13,7.00
-d73d66afaedb0a9efbc79e402f593a92,E001,Sarah Okonkwo,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-02-07,6.00
-d7de38e56c0b82ee036c4477788a8e61,E016,Claire Fontaine,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-05-22,4.00
-d9d8a7dba5626dcb1b9ec253332e245d,E013,,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-05-27,8.00
-da26fcfd1324da6e0a1358e6dea5168d,E008,Oliver Marsh,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-05-29,6.50
-dad7fe5d035a00aff3405ea79951ccbe,E032,Mei Lin,Data Engineer,P018,Event Streaming Platform,110000.00,2024-02-06,7.00
-db7d62c7c8a559c9170171c09102bf9b,E040,Soraya Mohammadi,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-05-27,6.50
-db9b80e1684ab107433a1d933b69f225,E032,Mei Lin,Data Engineer,P018,Event Streaming Platform,110000.00,2024-01-21,6.00
-dc36da8c178fa7ea7f205415d2b6b913,E005,Lena Bauer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-05-19,9.00
-dca23a6f214826df7af152f709250a37,E011,Yuki Tanaka,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-05-19,8.00
-de451127d0b6e96bcab0b4edb13d4d89,E027,Kofi Asante,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-01-18,8.00
-dec166b17aabaaf3431eeca7c1d202eb,E039,Nils Bergström,Backend Engineer,P008,API Gateway Consolidation,,2024-05-13,8.00
-e093847d09790445d52e4b690856b37a,E035,David Ogundimu,Data Analyst,P003,Customer Portal v2,60000.00,2024-01-22,8.00
-e15b5996b7b31470468c0e970ff37b18,E003,Maria Gonzalez,Backend Engineer,P008,API Gateway Consolidation,,2024-05-12,7.50
-e26d4a5f542c9d8084a90e389e4735b9,E029,Tariq Hassan,Data Scientist,P031,Customer Churn Model,78000.00,2024-02-21,8.00
-e28a48805c0bbfe0a9a17d90994f0cc8,E024,Grace Kim,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-03-04,6.00
-e431ff3b0648b1a16f5576d19e74a6b0,E002,James Patel,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-02-26,7.50
-e4fb49fc3f4e402d8c5fae683dadffa8,E038,Claudia Reyes,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-03-17,3.00
-e6beed2eaa1d1d6d0785a03c8e9d69f2,E001,Sarah Okonkwo,Data Engineer,P031,Customer Churn Model,78000.00,2024-02-20,8.00
-e6f5c61c1b98d6b7fe183e25ab130641,E006,Chris Ndukwe,DevOps Engineer,P029,Observability Stack,39000.00,2024-05-02,8.00
-e855da24a449554828e66b6b2262b9de,E036,Astrid Lindgren,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-04-17,8.50
-e8b4b5342bde0e1e3c6f7d62e1706bac,E010,Daniel Kovač,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-04-29,8.00
-ea38ce55a24bcf22ada72df34da52366,E002,James Patel,Data Analyst,P003,Customer Portal v2,60000.00,2024-05-26,6.00
-eb66cc1d221b776cd96012d5d505af34,E031,Jack Reynolds,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-04-30,7.00
-ebb3d24065351ee560965031b6c3b9c7,E006,Chris Ndukwe,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-01-09,8.00
-ecb5f9e55899591ba4b411869916dc81,E006,Chris Ndukwe,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-03-17,7.50
-ecf1d53b35b59f84263c4ccf85be6f5d,E011,Yuki Tanaka,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-01-10,8.00
-edfcbac178ad4830bfdac30c63c952c9,E012,Brendan Walsh,Project Manager,P004,Internal Analytics Dashboard,45000.00,2024-05-22,3.50
-ee1d9f7135f03537b4713c2fa06ece73,E027,Kofi Asante,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-04-02,8.00
-ef08671d02f5d8d19e59f4172009a89b,E032,Mei Lin,Data Engineer,P018,Event Streaming Platform,110000.00,2024-04-01,6.50
-ef512530cf5f6d4e833bd4be4a04b831,E032,Mei Lin,Data Engineer,P018,Event Streaming Platform,110000.00,2024-04-25,8.00
-ef6f365d9d38ae9a5042c6ccb7a1740c,E014,Anouk Vermeer,Data Scientist,P031,Customer Churn Model,78000.00,2024-04-04,8.00
-f08067470e4e9715f7e9d49c0fd3f437,E040,Soraya Mohammadi,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-03-28,7.50
-f0a427361448cf1929b781d92d25ef75,E014,Anouk Vermeer,Data Scientist,P031,Customer Churn Model,78000.00,2024-05-05,7.50
-f17524ec48c564955bf2c86b7b93a215,E030,Elena Popescu,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-04-23,8.00
-f26ba42197e868e13516f0666749ace8,E034,Simone Bianchi,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-04-22,8.00
-f2e98b7c722022f29ab09946ca2c6b11,E030,Elena Popescu,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-01-18,7.50
-f309f3bc053207847a83afe81e0facaa,E005,Lena Bauer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-01-08,9.00
-f348ff31b750923465f0751e5b69cd58,E034,Simone Bianchi,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-05-16,7.00
-f4f93afe3ba27e32fe545477fd327088,E015,Samuel Osei,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-05-30,6.00
-f53c38c2eec0e3c2dddef8573ab2f12c,E015,Samuel Osei,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-02-14,8.00
-f55d786d1e4bb235186e80ea614ad3da,E040,Soraya Mohammadi,Data Analyst,P026,Experimentation Platform,67000.00,2024-04-09,7.50
-f61ad2399cddc50ead965fd4ca8de93b,E023,Stefan Richter,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-05-21,9.00
-f73a420405a92278d57b31d05f6ee8b8,E031,Jack Reynolds,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-03-25,7.50
-f7956999f6acc04908570a416fe5e4a3,E002,James Patel,Data Analyst,P026,Experimentation Platform,67000.00,2024-04-08,6.50
-f83b1a1cb0779132e696a38989a2ec52,E011,Yuki Tanaka,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-03-05,8.00
-f8de257c18472c10e5c757f7276ccfd0,E012,Brendan Walsh,Project Manager,P004,Internal Analytics Dashboard,45000.00,2024-01-28,4.00
-f8e2fd57056f6aaedc736297f25883c5,E028,Hannah Müller,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-05-22,3.00
-f9e50457260186d9b9abf8c1f53587d9,E009,Fatima Al-Hassan,Data Analyst,P003,Customer Portal v2,60000.00,2024-02-04,7.00
-fa6d8ce7506de0d7f588a3959de72bec,E018,Nina Johansson,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-02-12,8.00
-fac25eb2764084519a79c2aaa65aac9c,E012,Brendan Walsh,Project Manager,P004,Internal Analytics Dashboard,45000.00,2024-01-11,3.00
-fb1ac157857396100377643c38cb6402,E033,Andrei Popov,DevOps Engineer,P005,Mobile App Launch,200000.00,2024-03-28,7.00
-fe332a7e3edd95862f92df7ebe94ef76,E023,Stefan Richter,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-01-31,7.50
-fe532443d296436ba249f08a318e9d18,E035,David Ogundimu,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-04-24,7.00
-ff735038693fc75097faec5646c30065,E017,Ravi Menon,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-05-06,8.00
+ebc4d98498903cecee075d243706a193,E040,Soraya Mohammadi,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-04-30,7.50
+6400fc0887ea0fff68674c8d260ee924,E019,Marcus Bell,DevOps Engineer,P029,Observability Stack,39000.00,2024-05-02,7.00
+e20ac66c5d2375b7b9a52b938c70678b,E030,Elena Popescu,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-03-28,6.00
+ba8f00d72bbc846dd6ee35a3c12df2ee,E006,Chris Ndukwe,DevOps Engineer,P029,Observability Stack,39000.00,2024-02-17,8.00
+61444bef0d56d299dbeeecb81f4017e3,E013,,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-03-28,8.00
+b6f07143940f2cb7c70c2a60b02629cd,E033,Andrei Popov,DevOps Engineer,P029,Observability Stack,39000.00,2024-02-18,8.00
+6d9d876ab03020508c5e3b3ede7864ad,E040,Soraya Mohammadi,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-05-27,6.50
+1b84cc86c7826eb96a387b45af4feb41,E019,Marcus Bell,DevOps Engineer,P029,Observability Stack,39000.00,2024-03-19,7.00
+04bbf03e414053675707424607746a61,E030,Elena Popescu,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-01-18,7.50
+5e0c10aab94820a4b1572186a6a624d5,E006,Chris Ndukwe,DevOps Engineer,P029,Observability Stack,39000.00,2024-03-18,8.00
+7a80c8dc71f4fd272ae00a9d6b0a5c90,E030,Elena Popescu,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-04-30,8.00
+5fdfb7944770d9c1d12289f08ec46657,E033,Andrei Popov,DevOps Engineer,P029,Observability Stack,39000.00,2024-03-19,8.00
+8bfde597dd675e070ae1a41924cee8f1,E013,,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-04-30,6.00
+5aa604e91029b64a005ce3e03caa5797,E033,Andrei Popov,DevOps Engineer,P029,Observability Stack,39000.00,2024-05-02,8.50
+8df2d35f672025507c6af3007c3ed56e,E002,James Patel,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-01-15,7.50
+d8b478718530cff5a13b9144d22bbf9b,E019,Marcus Bell,DevOps Engineer,P029,Observability Stack,39000.00,2024-02-17,7.50
+d27941e78f81bc87b92cabaf47101fc9,E040,Soraya Mohammadi,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-01-23,7.00
+a9794fa776bebd0505538a7343768ce1,E006,Chris Ndukwe,DevOps Engineer,P029,Observability Stack,39000.00,2024-05-02,8.00
+f9083874de7b92688af31946a89af9dc,E040,Soraya Mohammadi,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-03-28,7.50
+77efad515731ff2104b5a7209cbb8ddc,E013,,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-01-11,8.00
+2a51e6bb2d2e61a1cae802f70d770d7f,E013,,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-01-28,6.00
+267dbc32543f3fa8fbcf79eac40bb2c4,E013,,Data Analyst,P009,Compliance Reporting Tool,40000.00,2024-05-27,8.00
+40fa2899f59483368faf4d6fa977396d,E039,Nils Bergström,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-05-15,8.00
+b6da642a38cc423c46a3f39e07d624f3,E004,Tom Whitfield,Product Manager,P015,Self-Serve BI Rollout,47000.00,2024-04-14,4.50
+b66721236e15f6aca33c195ebb0e5f77,E017,Ravi Menon,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-04-03,8.00
+8413ec0ad70fae6bed16e8825c872cd0,E011,Yuki Tanaka,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-04-07,7.00
+ba6b144113a9be6764e8be1cb6c29f55,E036,Astrid Lindgren,Data Scientist,P031,Customer Churn Model,78000.00,2024-02-21,9.00
+fd9d5030d989f6d153ff0331f8b861fd,E039,Nils Bergström,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-01-22,8.00
+da01ed03d5e71c0e2ce08ffa715acce1,E016,Claire Fontaine,Product Manager,P015,Self-Serve BI Rollout,47000.00,2024-04-14,5.00
+b0f739f8f2febfa8a48e88c819ed6e08,E022,Aisha Mohammed,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-05-06,6.50
+601c4a92c8813965fbe4fa501bcb088d,E032,Mei Lin,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-05-07,8.00
+584b77677774e80ddf2135c996fb3222,E005,Lena Bauer,Data Scientist,P031,Customer Churn Model,78000.00,2024-02-20,9.00
+7a7c00ef65a115c73969ade71838e089,E010,Daniel Kovač,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-03-24,8.00
+348a4130c8104f1be09a574b30402472,E004,Tom Whitfield,Product Manager,P015,Self-Serve BI Rollout,47000.00,2024-02-18,4.00
+0aa8ee1327890948946c873e06ee9148,E022,Aisha Mohammed,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-04-03,6.00
+804f365ec024e5081d6a331cdb74b7d9,E027,Kofi Asante,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-05-07,8.00
+f34f287afe7d0d250ea0aadec13fd731,E029,Tariq Hassan,Data Scientist,P031,Customer Churn Model,78000.00,2024-05-05,9.00
+836749dc41738f449d920a8c0b4b79aa,E003,Maria Gonzalez,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-01-07,8.00
+52d0c18006f0ebaf9af48d0d5af8cc5b,E038,Claudia Reyes,Product Manager,P015,Self-Serve BI Rollout,47000.00,2024-04-15,3.50
+5e03b383eb88638ca82cd47725364181,E017,Ravi Menon,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-02-10,8.00
+2845562b45f054b1faefaae7ef1b2c31,E022,Aisha Mohammed,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-02-25,6.50
+680478c59afa9c73ad0e4a0df20a1cee,E023,Stefan Richter,Data Scientist,P031,Customer Churn Model,78000.00,2024-04-04,9.00
+7e3fb8c5a2463cd20a11d5759479e286,E039,Nils Bergström,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-03-25,8.00
+e09bf6b3ad078b1856746d39e754ccb0,E012,Brendan Walsh,Project Manager,P015,Self-Serve BI Rollout,47000.00,2024-04-14,3.00
+6d085c110617e8e05e2dd8f147073ee0,E005,Lena Bauer,Data Scientist,P030,Feature Store Build-Out,115000.00,2024-02-07,8.00
+03b40a53630523a987c9a61ea00e6cb8,E032,Mei Lin,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-02-25,7.00
+43ec9d30bd0b357c4c9546b2b671d317,E014,Anouk Vermeer,Data Scientist,P031,Customer Churn Model,78000.00,2024-02-20,8.00
+aaf00810c20a1a2ba509356e466d4651,E010,Daniel Kovač,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-01-10,7.50
+13bee7462f9bb193fc8e4d8a549f909f,E028,Hannah Müller,Product Manager,P015,Self-Serve BI Rollout,47000.00,2024-02-19,4.00
+dbceda256427e07b39f08b2f6524cc8e,E027,Kofi Asante,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-02-10,8.00
+c52bc58ef1bea95cc442c36bb03ab406,E007,Priya Sharma,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-02-24,8.00
+18d60dfa73a74f407b3a7a269adcbac7,E014,Anouk Vermeer,Data Scientist,P031,Customer Churn Model,78000.00,2024-05-05,7.50
+d1bb4d86bbd4b3d19ed11c283e55a0fe,E003,Maria Gonzalez,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-03-25,6.50
+fdfc41e3d841f5642043d4a840b2290c,E016,Claire Fontaine,Product Manager,P015,Self-Serve BI Rollout,47000.00,2024-02-19,5.00
+b7af79de29832172011e7f81166c8a93,E022,Aisha Mohammed,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-02-10,6.50
+59ca8604bf9cae3639c145111eaa0e05,E027,Kofi Asante,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-02-25,8.00
+98745ee5b539fa0a13a1c7e1558f38d4,E023,Stefan Richter,Data Scientist,P031,Customer Churn Model,78000.00,2024-02-21,7.50
+36085650212c9916d660eb7821a5d3f7,E031,Jack Reynolds,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-01-21,8.00
+94f343cbe327ea2f49d50d0fba8c7591,E012,Brendan Walsh,Project Manager,P015,Self-Serve BI Rollout,47000.00,2024-02-18,3.50
+ece3dd28855425fe8799b29f858c9fb8,E005,Lena Bauer,Data Scientist,P030,Feature Store Build-Out,115000.00,2024-04-03,7.00
+790c7ee493856b9aa2c9516012bb0aba,E017,Ravi Menon,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-02-24,8.00
+513ef9f966b798baec2dd9667bd27237,E036,Astrid Lindgren,Data Scientist,P031,Customer Churn Model,78000.00,2024-04-04,7.50
+e64341afcbdbdc9c50f613223249c04b,E001,Sarah Okonkwo,Data Engineer,P002,Data Warehouse Migration,85000.00,2024-01-15,8.00
+f6822399d586048daef552a134a942fb,E028,Hannah Müller,Product Manager,P015,Self-Serve BI Rollout,47000.00,2024-04-15,4.00
+cc4bb6e3d353fcbfd53bafdc8a64c122,E032,Mei Lin,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-02-11,7.00
+b810d5dd2f8161a6719ac02df154b71a,E037,Femi Adeyemi,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-02-26,8.00
+4a5169e1cc32c02a6badff76bf47ef64,E036,Astrid Lindgren,Data Scientist,P031,Customer Churn Model,78000.00,2024-05-05,8.00
+1b8bd3e54481d2418f1ddb431881b51a,E031,Jack Reynolds,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-03-25,7.50
+5baa5863f211a99662dfe8a9c381c22d,E038,Claudia Reyes,Product Manager,P015,Self-Serve BI Rollout,47000.00,2024-02-19,3.00
+d8c641fd904eaae3974086b1bf988a80,E017,Ravi Menon,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-05-06,8.00
+26f82f5126618d0860ecd3a233af1b74,E027,Kofi Asante,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-04-02,8.00
+54706e048ab1d668cea8066fc948effb,E029,Tariq Hassan,Data Scientist,P031,Customer Churn Model,78000.00,2024-02-21,8.00
+12d7f734438d52e740b0343c57e1dc23,E010,Daniel Kovač,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-05-14,7.00
+f879d8944460a5339ca47a413ea376b9,E037,Femi Adeyemi,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-02-11,8.00
+86d7dc90a56e5041fd16103989590498,E017,Ravi Menon,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-04-07,8.00
+de74d2f731cf318f81976a42550d500f,E029,Tariq Hassan,Data Scientist,P031,Customer Churn Model,78000.00,2024-04-04,8.00
+25fb76225d11d62abbbbfb5e7ca4cef3,E003,Maria Gonzalez,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-05-14,6.50
+80a9bb2f76f4109d11ade265e15a44ab,E001,Sarah Okonkwo,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-02-07,6.00
+f01036a5465ff5522a9e13678769c3fb,E007,Priya Sharma,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-04-07,8.00
+dbd0ff59410f9b905f82d3e2d5e36ec3,E001,Sarah Okonkwo,Data Engineer,P031,Customer Churn Model,78000.00,2024-05-05,8.00
+4d1d473e3c61e0f06298fb1eae3a5ca7,E003,Maria Gonzalez,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-02-01,8.00
+6663ce0877e9b01a5651a1174e9e4ddf,E011,Yuki Tanaka,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-02-07,7.00
+7683ed4752b599b0250b042c5f44480d,E011,Yuki Tanaka,Data Engineer,P023,Data Mesh Pilot,58000.00,2024-02-24,7.00
+d17387f9f40f39cabcc5bb8f1dcfd902,E014,Anouk Vermeer,Data Scientist,P031,Customer Churn Model,78000.00,2024-04-04,8.00
+8c6d48329298fb41e02c6014f5163589,E031,Jack Reynolds,Backend Engineer,P002,Data Warehouse Migration,85000.00,2024-05-14,8.00
+e9a64b2fc4a25850b4e2689da0c96090,E001,Sarah Okonkwo,Data Engineer,P030,Feature Store Build-Out,115000.00,2024-04-02,8.00
+62b2bbf708fcc21f43708dd7d19af229,E001,Sarah Okonkwo,Data Engineer,P031,Customer Churn Model,78000.00,2024-02-20,8.00
+4203edae795efac1d93100a5c99711b2,E005,Lena Bauer,Data Scientist,P030,Feature Store Build-Out,115000.00,2024-05-06,7.00
+b39655176fe65f44170c3eae7a8154d5,E027,Kofi Asante,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-04-25,7.50
+4e45681653d59687a12d9deb4c6cec61,E016,Claire Fontaine,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-05-22,4.00
+c5b84950ba8b128a5d0873b2d6a470c6,E033,Andrei Popov,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-04-18,6.00
+326f8b9db42c1e954b4a440423b65a55,E017,Ravi Menon,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-04-28,8.00
+5ae66dd62d556155a2eae53e29cc0f5b,E038,Claudia Reyes,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-03-17,3.00
+b9b5399d321d554ac4f9eda648f51162,E019,Marcus Bell,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-05-28,7.50
+0ccfdc0dcd921b2ae9fe2dfe3983baba,E027,Kofi Asante,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-01-18,8.00
+25f231ba4de44a38fce2003695efe845,E012,Brendan Walsh,Project Manager,P004,Internal Analytics Dashboard,45000.00,2024-01-11,3.00
+56be51f3113a537842ac6ef344887051,E006,Chris Ndukwe,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-04-18,7.50
+19a5dc59e1b5773ffdc7d4b860a750ce,E027,Kofi Asante,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-03-10,8.00
+8b405ec7e43a174847d6724ac8f58f85,E004,Tom Whitfield,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-01-08,4.00
+775e5ca9f47240dc52179abba2d5b942,E019,Marcus Bell,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-01-14,8.00
+d49e5467fd86543e53afabb78f584901,E007,Priya Sharma,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-01-09,7.00
+3d9d19fcc0919a6a6a6e76ff63ed53f4,E012,Brendan Walsh,Project Manager,P004,Internal Analytics Dashboard,45000.00,2024-05-22,3.50
+6ab5e621ef5c1fac3a85b02c9626a8e2,E019,Marcus Bell,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-01-30,8.00
+c48497dd70f6fa8d62e7f0fcda362f6b,E001,Sarah Okonkwo,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-01-08,7.50
+616f5b1dc84d04a4abbb6fff95b5a953,E016,Claire Fontaine,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-01-29,5.00
+82dd0ee0011bfb43718c3e2486bd3a88,E006,Chris Ndukwe,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-03-17,7.50
+5a77624c085a39cacac6826e8501576c,E037,Femi Adeyemi,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-04-02,7.50
+16c04451fb111f5f5daca27b60bbe2c7,E012,Brendan Walsh,Project Manager,P004,Internal Analytics Dashboard,45000.00,2024-03-14,3.50
+812e3828de96486369e3c98d852b4a67,E006,Chris Ndukwe,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-01-09,8.00
+bf259ba07c83ce9ea944e47b32940ea0,E027,Kofi Asante,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-02-05,6.00
+1f8a635f7fe5b306ef82a8d394c05931,E038,Claudia Reyes,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-01-22,3.00
+3c52f90e412fb8828e46a83f954682d2,E019,Marcus Bell,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-04-18,8.00
+a7a56bec34cf9b40424c4e95fb5eb146,E001,Sarah Okonkwo,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-04-28,8.00
+91e71e70f1a7a9732813b0e65d08c62a,E028,Hannah Müller,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-01-18,4.00
+5d97ba7fb43a0a25c50408b8ce476605,E033,Andrei Popov,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-01-21,8.00
+259a95cd2ebdad374eb0d07ad6a10880,E017,Ravi Menon,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-01-29,8.00
+8c658ac7f401cfc22a20da62fb3357a4,E004,Tom Whitfield,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-05-22,5.00
+b50a31caee50795412986d3e62e41344,E006,Chris Ndukwe,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-05-28,8.00
+2408bcb7a79e0e5105cf4324b6d5ddf3,E001,Sarah Okonkwo,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-02-01,8.00
+c2d72c3badbc27673ac3a8c01e8c5bae,E021,Leo Dubois,,P004,Internal Analytics Dashboard,45000.00,2024-01-30,6.00
+fde3f38807289b7bbcbb319724d0d8f5,E019,Marcus Bell,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-03-18,8.00
+9f8582678b4f7ff84ac9f864e95165a6,E037,Femi Adeyemi,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-03-10,8.00
+1f4e3784c32e17679c139cd403b8fb87,E028,Hannah Müller,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-03-17,4.00
+9fbf5d6ee3598160fea42b99a52327bf,E033,Andrei Popov,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-05-28,8.00
+853401aa9ae6b8504f7152ee41a96273,E037,Femi Adeyemi,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-02-06,8.00
+dd336db6c337d0ed767a3535739e4f1d,E028,Hannah Müller,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-05-22,3.00
+8f773b5a1d8c0100300e3207b72a7e77,E033,Andrei Popov,DevOps Engineer,P006,Legacy System Decommission,30000.00,2024-03-18,6.00
+d5c2d38a0907804580f59791c16d3b90,E007,Priya Sharma,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-04-28,7.00
+f1a2e2b55a4aea7363091df4e83934b6,E021,Leo Dubois,,P004,Internal Analytics Dashboard,45000.00,2024-05-01,7.00
+841a9d6d6257718fa649294ede53f441,E037,Femi Adeyemi,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-01-22,8.00
+ed22844e5e903db4d5b8e911796d681e,E016,Claire Fontaine,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-03-14,5.00
+af756bc766e1bbf60e7ff7f5cc3c4aba,E007,Priya Sharma,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-03-11,8.00
+739a9dabe2b2ed30c84691680732b948,E016,Claire Fontaine,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-01-14,5.00
+0178e7f8d870ba6ffbcc21fa7c904c13,E017,Ravi Menon,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-03-11,6.00
+2cba9c2da231a9e877270470e73241ac,E004,Tom Whitfield,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-03-14,4.00
+1e9fbc7b470183fa2efbf81cbf0caf4d,E037,Femi Adeyemi,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-04-24,8.00
+ef1e334fbf8537f5ff8e4bcbaaed828b,E038,Claudia Reyes,Product Manager,P004,Internal Analytics Dashboard,45000.00,2024-05-23,4.50
+c3c2d966077e9e0e336cd8989f36c93b,E001,Sarah Okonkwo,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-01-07,8.00
+734d3919bc9fc25888c229f5f134ce06,E012,Brendan Walsh,Project Manager,P004,Internal Analytics Dashboard,45000.00,2024-01-28,4.00
+beb79913ef0bbf4f16b6c6548161464e,E007,Priya Sharma,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-01-16,8.00
+3fbab21376dadf6bfdda68814693851f,E037,Femi Adeyemi,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-05-07,7.50
+3959cc0d4a4556de16ded515155e4ad8,E007,Priya Sharma,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-02-04,8.00
+6b2ee72462346b0d5abd5111e2108c00,E001,Sarah Okonkwo,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-03-11,7.50
+a216b1a3415c719682724dd44df21cbb,E017,Ravi Menon,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-01-14,8.00
+661bc14bdb54ce0195dffd57ce7d453f,E017,Ravi Menon,Data Engineer,P001,Alpha Platform Rebuild,120000.00,2024-02-05,7.50
+a21631025910bb7f3a76c65b66fccefe,E022,Aisha Mohammed,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-05-20,6.50
+1a2425bc565c836f033c04b1c271d737,E039,Nils Bergström,Backend Engineer,P008,API Gateway Consolidation,,2024-03-24,7.00
+80b1f8876877becd2afec2d9a7f8a17d,E015,Samuel Osei,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-04-10,8.00
+74668aba1192b7b5e22ab529bb2202ce,E014,Anouk Vermeer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-03-06,7.50
+d8e5fb19fcdfa84a5ff4c6c8ad7b621a,E024,Grace Kim,Backend Engineer,P008,API Gateway Consolidation,,2024-05-13,6.00
+8e8d0aa672b5bd3e76ce149c4ff82f87,E003,Maria Gonzalez,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-05-30,7.50
+696e75f137363fafd0a5ff91e8feca8a,E011,Yuki Tanaka,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-04-16,8.00
+41f3dde0af9e888c78ca0ad52457d830,E015,Samuel Osei,Backend Engineer,P008,API Gateway Consolidation,,2024-03-21,8.00
+48389ad06afc73f0104446692826cc42,E003,Maria Gonzalez,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-02-13,8.00
+402a6e49ca0536b781d8a22f595e039c,E005,Lena Bauer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-02-04,9.00
+07318a58b3ca746e317ffa0e07dfe70b,E015,Samuel Osei,Backend Engineer,P008,API Gateway Consolidation,,2024-01-11,8.00
+c3673dd1637a3a5eee821295e30e7fbb,E024,Grace Kim,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-04-11,6.50
+7306fc67d9687e3d2b82e833e99d74de,E011,Yuki Tanaka,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-01-10,8.00
+601cd186452c63c296822a51f352dd6a,E031,Jack Reynolds,Backend Engineer,P008,API Gateway Consolidation,,2024-05-13,7.50
+0658342296cac90a6f009250c6c48002,E024,Grace Kim,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-05-30,8.00
+47e1d9d72528c8cf9328a4cb753302de,E011,Yuki Tanaka,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-03-05,8.00
+b1c0c6f55b59c413384409131e0e9291,E024,Grace Kim,Backend Engineer,P008,API Gateway Consolidation,,2024-01-17,8.00
+ff0e1031086070b439894b98797ba510,E024,Grace Kim,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-02-14,6.50
+e7928ee95ff3c9fceee043974cfbcc38,E029,Tariq Hassan,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-05-21,8.00
+c99bad639789584d56a291f8c0d1aefd,E039,Nils Bergström,Backend Engineer,P008,API Gateway Consolidation,,2024-05-13,8.00
+5e4c931aff92d1265863ac4be0fff3fe,E010,Daniel Kovač,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-02-13,7.00
+091ce089e64bc67295c802f9b479c79d,E023,Stefan Richter,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-01-17,9.00
+d116f6697dcef0a5dc081097c51d17e2,E003,Maria Gonzalez,Backend Engineer,P008,API Gateway Consolidation,,2024-03-21,7.50
+6e7b0ecee1d177052d17431c47a4eeaa,E039,Nils Bergström,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-04-11,7.00
+d7c8d470df6efb0c1184e2f3e61562d3,E014,Anouk Vermeer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-04-16,7.50
+4c5168edf5cbd51dcafbcc77d17f4e0b,E003,Maria Gonzalez,Backend Engineer,P008,API Gateway Consolidation,,2024-01-15,8.00
+e54d6d05dd355f8998bb7892149d162d,E031,Jack Reynolds,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-04-11,8.00
+b05da7261a8f493b1ca55966c6958653,E036,Astrid Lindgren,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-05-21,8.00
+5e54abb28fb411754b014ca4c9780778,E024,Grace Kim,Backend Engineer,P008,API Gateway Consolidation,,2024-03-21,6.00
+49778d7f9a7501b663b5ca2a27b5a530,E010,Daniel Kovač,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-04-10,7.00
+22f3751f6d812b7c1e116f33a628f591,E005,Lena Bauer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-03-05,9.00
+45e79e4ce2e066209eaa037dfd5e3f9d,E015,Samuel Osei,Backend Engineer,P008,API Gateway Consolidation,,2024-05-12,8.00
+1f3c7a6ba191cf973a072aa425bce9ab,E010,Daniel Kovač,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-05-30,8.00
+a04c4bc16bd09f2b10d3855614c1139e,E005,Lena Bauer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-05-19,9.00
+a6d2098e7239ef9137919f0417a7a422,E031,Jack Reynolds,Backend Engineer,P008,API Gateway Consolidation,,2024-03-24,8.00
+a5454cbd6579b35a8d52ea1abb208164,E039,Nils Bergström,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-02-17,7.00
+79595c75973d461313e90b8fbf576732,E036,Astrid Lindgren,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-04-17,8.50
+394258c208ee5db8137c3cb1acdcb4bc,E003,Maria Gonzalez,Backend Engineer,P008,API Gateway Consolidation,,2024-05-12,7.50
+856eeebdddaf1141c303c623d0b3afec,E031,Jack Reynolds,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-02-14,8.00
+6bf606437eabf24a7921df439cb565e9,E029,Tariq Hassan,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-01-18,8.00
+3887faf1977e9cf1e409dd81e020b7df,E024,Grace Kim,Backend Engineer,P008,API Gateway Consolidation,,2024-01-31,8.00
+0b00f266c3677448b72fcda10fc801bd,E015,Samuel Osei,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-05-30,6.00
+8b3ca377588219c958381e9c3f6a388b,E029,Tariq Hassan,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-02-06,8.00
+998ec7ded34e41e546e7d4b75de7f79d,E015,Samuel Osei,Backend Engineer,P008,API Gateway Consolidation,,2024-01-29,8.00
+385f3a24eb01ae193d1021657bad5590,E015,Samuel Osei,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-02-14,8.00
+823495f7c77fbac96c97da0d383d3aa4,E023,Stefan Richter,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-01-31,7.50
+f15d038123d5f3e28c3df8b340de9f41,E003,Maria Gonzalez,Backend Engineer,P020,Product Recommendation Engine,130000.00,2024-04-10,8.00
+77736c95360ea81934306ec7ca5ededa,E017,Ravi Menon,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-03-06,8.00
+18615623b38ce9447e4eee797a7bef52,E036,Astrid Lindgren,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-02-06,8.50
+3f5ceb685e3048c0fcdc048e9fe16edd,E029,Tariq Hassan,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-04-17,8.00
+a0a0251121dda36e32d1ff6fcb8a0ed2,E005,Lena Bauer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-01-15,10.00
+51f421a52e8ff684e7c47460727b1e21,E001,Sarah Okonkwo,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-04-15,8.00
+d96077a680f01f86dbd6e734d096d7d9,E001,Sarah Okonkwo,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-03-05,8.00
+2bf7f10612f2176d4d6280b2158e8f93,E023,Stefan Richter,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-03-07,8.00
+7f2d5a9235016a793e96f2a74cb0bc9e,E014,Anouk Vermeer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-02-05,8.00
+5d4a248d3770693720a5654a14332cbf,E036,Astrid Lindgren,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-01-22,9.00
+efe7434bbcf6be3c43a7db53cf33417e,E023,Stefan Richter,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-05-21,9.00
+b0ff746e2626f46be30c9f2d5724b4e8,E023,Stefan Richter,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-04-17,9.00
+37c72512f908a07f1c2b2567aa92f880,E017,Ravi Menon,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-05-20,8.00
+0b35711c28075a694135c2d071f86ed1,E011,Yuki Tanaka,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-05-19,8.00
+62ae22416abdfe46d426a82be9b84e19,E005,Lena Bauer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-04-15,9.00
+f48cd5250bba28750c60c8111c9b17d4,E036,Astrid Lindgren,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-03-07,8.00
+f6b4f35f7495e6d437472ee8b69a832c,E014,Anouk Vermeer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-01-11,6.00
+2874e7d659a14c00ee5ca481ba6c8ac8,E011,Yuki Tanaka,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-01-28,8.00
+0a756fdce453c48480cd805a7c0e6c2f,E001,Sarah Okonkwo,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-05-19,8.00
+0dafeff35792604878f84bbf06adc279,E029,Tariq Hassan,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-03-07,9.00
+74428911e31d4fbb3e88a1bc1594840b,E022,Aisha Mohammed,Data Engineer,P007,ML Forecasting Pipeline,95000.00,2024-03-06,6.50
+e703b496856163fdeb3f726f29796482,E014,Anouk Vermeer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-05-20,7.50
+a9885b590f6acf788992d5a3f232f478,E005,Lena Bauer,Data Scientist,P007,ML Forecasting Pipeline,95000.00,2024-01-08,9.00
+0b6f658b7931f09108c835729a1acfda,E009,Fatima Al-Hassan,Data Analyst,P003,Customer Portal v2,60000.00,2024-03-12,7.00
+7222540c5fb573a55976a881b3f8c227,E035,David Ogundimu,Data Analyst,P003,Customer Portal v2,60000.00,2024-01-22,8.00
+77cbb02a7917c36e6806abeb45e4d93b,E009,Fatima Al-Hassan,Data Analyst,P003,Customer Portal v2,60000.00,2024-05-26,8.00
+4eca58898c4df74922223f3d361358dc,E040,Soraya Mohammadi,Data Analyst,P003,Customer Portal v2,60000.00,2024-05-26,7.50
+de4f4949cb0f7bdc85c03d520e745ce7,E025,Patrick O'Brien,Data Analyst,P003,Customer Portal v2,60000.00,2024-01-17,7.00
+d58158f8fe8c85a61cdf80540d588e90,E009,Fatima Al-Hassan,Data Analyst,P003,Customer Portal v2,60000.00,2024-02-04,7.00
+fe45298e42d7e22f7517361e9c06cb35,E002,James Patel,Data Analyst,P003,Customer Portal v2,60000.00,2024-03-12,8.00
+7133054e1bd0c36492c9c8df345b9ef7,E002,James Patel,Data Analyst,P003,Customer Portal v2,60000.00,2024-01-07,6.00
+ce157e67479b58251e12de83524c51e1,E020,Ingrid Halvorsen,Data Analyst,P003,Customer Portal v2,60000.00,2024-05-23,7.00
+47668ccc85c4fa9698a9c8e7df09b8f4,E020,Ingrid Halvorsen,Data Analyst,P003,Customer Portal v2,60000.00,2024-03-12,6.50
+74774fcb56b4fb42bdc9f702cc6bf295,E040,Soraya Mohammadi,Data Analyst,P003,Customer Portal v2,60000.00,2024-03-13,6.00
+4a75a0c509839051083fefd06ce12d9c,E025,Patrick O'Brien,Data Analyst,P003,Customer Portal v2,60000.00,2024-01-31,6.00
+3b138c28de3c4bdb028d6ee140e57989,E025,Patrick O'Brien,Data Analyst,P003,Customer Portal v2,60000.00,2024-03-13,8.00
+9105f391963f06a6bf472487e75b0090,E035,David Ogundimu,Data Analyst,P003,Customer Portal v2,60000.00,2024-05-23,6.50
+19780f2cd809cfc0f7a5339e88f175c6,E020,Ingrid Halvorsen,Data Analyst,P003,Customer Portal v2,60000.00,2024-01-15,6.00
+ae844081f4fb3f093b9eb42716c5d07b,E002,James Patel,Data Analyst,P003,Customer Portal v2,60000.00,2024-02-01,7.00
+8a91c38173d5325ec65973dc06bae37b,E025,Patrick O'Brien,Data Analyst,P003,Customer Portal v2,60000.00,2024-05-23,8.00
+c5b35792a044c5e8cded91e553bb7b87,E002,James Patel,Data Analyst,P003,Customer Portal v2,60000.00,2024-05-26,6.00
+2566a09523f239946d9d4fa546cfa7e9,E035,David Ogundimu,Data Analyst,P003,Customer Portal v2,60000.00,2024-03-13,7.50
+df9345aaaff1c3d23346e2db6c84e452,E009,Fatima Al-Hassan,Data Analyst,P003,Customer Portal v2,60000.00,2024-01-10,8.00
+fca7263706bead667c5b8f80202fcd34,E008,Oliver Marsh,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-05-29,6.50
+c8bbda93bc030953dfed343ec1890f82,E011,Yuki Tanaka,Data Engineer,P012,Real-Time Alerting System,88000.00,2024-01-16,8.00
+7c3f21664b936ec58f5753abd443e275,E015,Samuel Osei,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-03-03,8.00
+8027fe565e29f77974f02de9838c7387,E032,Mei Lin,Data Engineer,P018,Event Streaming Platform,110000.00,2024-04-25,8.00
+7addc91ab1fa6cf566995d6c2a39eddd,E040,Soraya Mohammadi,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-02-28,6.00
+75c4509a5d5c9c051b65eff99ed07bc2,E007,Priya Sharma,Data Engineer,P005,Mobile App Launch,200000.00,2024-01-25,7.00
+752ba1d12e3520e64f23cb3d39e218a7,E034,Simone Bianchi,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-04-09,6.00
+f48b52197ce6e7694f27eed96ad61f76,E034,Simone Bianchi,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-05-30,8.00
+243b4f998c61157e13849ad1fd7e61a6,E011,Yuki Tanaka,Data Engineer,P012,Real-Time Alerting System,88000.00,2024-05-08,7.00
+78625855ca379d5784ed380226ccddce,E039,Nils Bergström,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-03-04,7.00
+2111214de94ce9be99620e260ce2c036,E032,Mei Lin,Data Engineer,P018,Event Streaming Platform,110000.00,2024-05-08,6.00
+f167308e49fb6136775080be2b547064,E018,Nina Johansson,Analytics Engineer,P025,Search Relevance Improvement,84000.00,2024-02-27,7.00
+63e8ebbc02d9686af39db6715c0e9f5c,E007,Priya Sharma,Data Engineer,P005,Mobile App Launch,200000.00,2024-05-09,7.50
+2c76ee25d05239fdbeaf6be9750c26a4,E026,Valentina Rossi,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-04-09,8.00
+a1a68f6943f0f504b09262fed21ebad5,E026,Valentina Rossi,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-04-22,6.50
+c128a710b93e81ce37706683f3b008cb,E011,Yuki Tanaka,Data Engineer,P012,Real-Time Alerting System,88000.00,2024-02-04,6.50
+9ac327e3801a815ece094c036f584d51,E031,Jack Reynolds,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-04-30,7.00
+040164fcba2d82cc76481461f53927f2,E032,Mei Lin,Data Engineer,P018,Event Streaming Platform,110000.00,2024-01-21,6.00
+87b6fe95b2a6d8a6e0387d002325d5ed,E030,Elena Popescu,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-02-28,7.00
+03570368bb7d031693ac20fb875793a3,E008,Oliver Marsh,Analytics Engineer,P005,Mobile App Launch,200000.00,2024-01-25,6.00
+d1a5b62a83b37e682cbdbd6d2dca4347,E040,Soraya Mohammadi,Data Analyst,P026,Experimentation Platform,67000.00,2024-04-09,7.50
+3125277430f31d7c343cce902967535b,E008,Oliver Marsh,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-03-19,6.50
+7fccf8002b4487cb2c50de0554f149a9,E011,Yuki Tanaka,Data Engineer,P012,Real-Time Alerting System,88000.00,2024-04-01,8.00
+b1de80c70793036a8e8c785ad0a09a28,E024,Grace Kim,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-04-30,8.00
+4306d9b71c05890713ef99d021324f1d,E022,Aisha Mohammed,Data Engineer,P018,Event Streaming Platform,110000.00,2024-02-05,8.00
+7402550e7f0e1e47e029de187230f29c,E025,Patrick O'Brien,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-02-27,8.00
+837409cf6b1acbe9a6c60e883a4203a0,E033,Andrei Popov,DevOps Engineer,P005,Mobile App Launch,200000.00,2024-03-28,7.00
+e782d5e2b874092b8afca030f310bf0f,E034,Simone Bianchi,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-02-12,7.00
+0b0975c78cf4ee88a747d137e8faf3bc,E008,Oliver Marsh,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-01-09,6.50
+320486dbe60d17a64c79934cb65e983b,E010,Daniel Kovač,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-03-03,7.50
+fc05097aaecc72c9f4536e88d5c4a8ff,E032,Mei Lin,Data Engineer,P018,Event Streaming Platform,110000.00,2024-04-01,6.50
+da85873cec8feec752899954261968c9,E026,Valentina Rossi,Analytics Engineer,P025,Search Relevance Improvement,84000.00,2024-02-28,6.50
+a4b86678d354602000d2aacdbcab282f,E006,Chris Ndukwe,DevOps Engineer,P005,Mobile App Launch,200000.00,2024-03-27,8.00
+29d2f3378b087b1b6c411081597d5b70,E026,Valentina Rossi,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-02-12,6.00
+f2bee569980bf6a2a9f144b421a52642,E034,Simone Bianchi,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-03-20,8.00
+d686d9945f75b81d3a10dbd0f32ae0c8,E015,Samuel Osei,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-04-29,6.50
+5f42d23b9222e98d0cd7da41212655b2,E032,Mei Lin,Data Engineer,P018,Event Streaming Platform,110000.00,2024-03-10,7.00
+dc10672915712d4ed7f7f5026050761f,E035,David Ogundimu,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-02-28,8.00
+1dacf594cab6b421f7f81a056a34e77d,E005,Lena Bauer,Data Scientist,P005,Mobile App Launch,200000.00,2024-01-24,9.00
+b0d77e54873aa151d63d0da82aa48a8a,E034,Simone Bianchi,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-05-16,7.00
+d95d00074fa41ecc7d74c7bb75b1c8f2,E034,Simone Bianchi,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-04-22,8.00
+583831f0eb569658f7e02f97bd8170ad,E039,Nils Bergström,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-04-30,8.00
+9ef2092a32e9b755c6b01d05cd27fcce,E032,Mei Lin,Data Engineer,P018,Event Streaming Platform,110000.00,2024-02-06,7.00
+25f3f5c218b7e6726427dc5d08fa3a2e,E002,James Patel,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-04-22,7.00
+7bfd41a4cdabedd062cefee4a5333e61,E006,Chris Ndukwe,DevOps Engineer,P005,Mobile App Launch,200000.00,2024-01-25,8.00
+463461ab1eccbb70b73d8707d247172f,E026,Valentina Rossi,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-05-16,8.00
+86b68802f664951ad4b464ee17353998,E026,Valentina Rossi,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-05-29,7.00
+191ed34210f94191e9153b951fb56eeb,E010,Daniel Kovač,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-04-29,8.00
+ff65c277858df2369ac7c3abda45a40f,E022,Aisha Mohammed,Data Engineer,P018,Event Streaming Platform,110000.00,2024-01-16,6.50
+0d68378af4061ca4cb3b9210fecee06d,E035,David Ogundimu,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-04-24,7.00
+b62b5eb71a4a146f4afdc0012e99e101,E006,Chris Ndukwe,DevOps Engineer,P005,Mobile App Launch,200000.00,2024-05-09,7.00
+1752d3be5182c27a17f273d10f147cb9,E008,Oliver Marsh,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-04-08,8.00
+a9abdd20d8747d15df9b5cb2aaf3e497,E008,Oliver Marsh,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-01-16,7.00
+854d900fa35377119046a7ec0c92e0e5,E024,Grace Kim,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-03-04,6.00
+82505893e5cb3ebae93c91f06ba10a4b,E022,Aisha Mohammed,Data Engineer,P018,Event Streaming Platform,110000.00,2024-05-08,8.00
+85cb1263bd7bec3a59bf6d016e0ed723,E030,Elena Popescu,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-04-23,8.00
+59d023352281c1f9d83b435012108b4a,E019,Marcus Bell,DevOps Engineer,P005,Mobile App Launch,200000.00,2024-05-12,8.00
+d63dd2a3f50efaf34b3c41b2ac540a8c,E002,James Patel,Data Analyst,P026,Experimentation Platform,67000.00,2024-04-08,6.50
+91b46b46f4ab87893dfc03b9ba2e6674,E008,Oliver Marsh,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-04-21,7.00
+589c3a71622eaae0dcc942ac12bd9e38,E031,Jack Reynolds,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-03-04,8.00
+ee4ff4d718150ca7f6f1d0763bd5b9d4,E022,Aisha Mohammed,Data Engineer,P018,Event Streaming Platform,110000.00,2024-04-25,6.50
+274b0b9beef99a2d472691014b349f56,E025,Patrick O'Brien,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-04-23,6.50
+103d739850f9fd262ddce467a5a9fc8b,E007,Priya Sharma,Data Engineer,P005,Mobile App Launch,200000.00,2024-03-27,6.50
+f9205177534b623823a2bf1e1364d1c9,E018,Nina Johansson,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-04-08,7.00
+c59210137d92a5aaff31373d624d116f,E034,Simone Bianchi,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-01-21,7.00
+f587dd425fb48b58ff76b99ebd6885a5,E003,Maria Gonzalez,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-03-03,8.00
+338dea11c8c1db484478918b5daccb86,E022,Aisha Mohammed,Data Engineer,P018,Event Streaming Platform,110000.00,2024-01-31,8.00
+28211f8259f1caee38f3841cbd112493,E040,Soraya Mohammadi,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-04-24,6.00
+c7d039cc970d5b6662de49c5962375ec,E003,Maria Gonzalez,Backend Engineer,P005,Mobile App Launch,200000.00,2024-01-24,8.00
+e26314fc5de01c2ffe1d53f80c11e466,E018,Nina Johansson,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-02-12,8.00
+41634c0f2b407a93fd6cefb11884132c,E018,Nina Johansson,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-05-29,8.00
+a29bc7fe39c02b623a5150c9c6d2eb44,E003,Maria Gonzalez,Backend Engineer,P035,Cross-Sell Recommendation,92000.00,2024-04-29,7.50
+aa1e1d78f4f9d470c45cad97fefa0316,E022,Aisha Mohammed,Data Engineer,P018,Event Streaming Platform,110000.00,2024-04-01,7.00
+78742bb4f2845afb630a1a949c2ad50b,E009,Fatima Al-Hassan,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-04-23,8.00
+dbb3f20e27ea48d248487f424737264b,E002,James Patel,Data Analyst,P005,Mobile App Launch,200000.00,2024-03-26,7.00
+e0970ce99f924a1cce1589641ba7e1ca,E008,Oliver Marsh,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-05-15,6.50
+805d22aba7bc639b289e68033d00742f,E018,Nina Johansson,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-01-14,7.00
+8c6d5a6686533a5b71585c283b8a4226,E009,Fatima Al-Hassan,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-02-27,8.00
+67abf1653649fdcf00176be78c9c0ebb,E002,James Patel,Data Analyst,P005,Mobile App Launch,200000.00,2024-01-23,6.50
+1791cab049dc476800e22d4037e96c10,E002,James Patel,Data Analyst,P026,Experimentation Platform,67000.00,2024-05-15,7.00
+938b058f6679031c493dd732cd880472,E018,Nina Johansson,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-03-20,8.00
+a450bbb94bc840a824711ef6ce63a9ee,E008,Oliver Marsh,Analytics Engineer,P025,Search Relevance Improvement,84000.00,2024-02-26,6.00
+a62a0054e3e0ba8c899f59fc5d39a542,E001,Sarah Okonkwo,Data Engineer,P005,Mobile App Launch,200000.00,2024-03-26,8.00
+a8871ae990ea2a357748830ee54ce0ab,E008,Oliver Marsh,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-02-11,7.50
+3c9267f07fa49923b3d684aabb720d37,E026,Valentina Rossi,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-03-20,7.00
+3bd20c5d936be75f65c86a72d45fac4d,E002,James Patel,Data Analyst,P025,Search Relevance Improvement,84000.00,2024-02-26,7.50
+d7c685ba15c822a727b50e187193eeed,E001,Sarah Okonkwo,Data Engineer,P005,Mobile App Launch,200000.00,2024-01-23,8.00
+e3068a5778af1c4332108f77d3aa94d3,E002,James Patel,Data Analyst,P026,Experimentation Platform,67000.00,2024-02-11,6.00
+e4b5031b6c98ab716568149c43dea192,E026,Valentina Rossi,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-01-17,6.00
+93194921496339084829bfcf94db343a,E001,Sarah Okonkwo,Data Engineer,P005,Mobile App Launch,200000.00,2024-05-09,8.00
+fd106e4bd6f4464250c7bd35361c3197,E040,Soraya Mohammadi,Data Analyst,P026,Experimentation Platform,67000.00,2024-02-13,5.50
+d07b3a507d5c1008d474d1e9ee62f09a,E018,Nina Johansson,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-01-30,7.00
+3aa0dedbca6304e53bb03b731623f603,E019,Marcus Bell,DevOps Engineer,P005,Mobile App Launch,200000.00,2024-03-27,8.00
+2fc2909a93a581ddcd9e4eb5714a4d0d,E018,Nina Johansson,Analytics Engineer,P026,Experimentation Platform,67000.00,2024-05-16,8.00
+2c911b9190b8207dbc3d3bffdaf1688b,E018,Nina Johansson,Analytics Engineer,P010,Data Catalogue Implementation,70000.00,2024-04-21,8.00
+85bda412bfc9571c2478fcf534a5f2fe,E004,Tom Whitfield,Product Manager,P005,Mobile App Launch,200000.00,2024-01-24,5.00
+42069c81b9f772e82aed93c7e7b91261,E040,Soraya Mohammadi,Data Analyst,P026,Experimentation Platform,67000.00,2024-05-16,6.00

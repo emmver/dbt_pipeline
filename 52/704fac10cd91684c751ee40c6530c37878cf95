@@ -1,0 +1,29 @@
+docs/docglow-data.json
+  s_c63aaa8eb8080a::t_9d43081e5f62eb 1
+docs/index.html
+  s_c63aaa8eb8080a::t_9d43081e5f62eb 2-15
+docs/.gitignore
+  s_c63aaa8eb8080a::t_388edf274c2af5 1-3
+docs/assets/index-DBsTUPX5.css
+  s_c63aaa8eb8080a::t_1d05621bcf3eb3 1
+docs/assets/index-Dwy8o40D.js
+  s_c63aaa8eb8080a::t_9ab7ad9435d19b 1-194
+docs/favicon.svg
+  s_c63aaa8eb8080a::t_d423ec6c67c97d 1-32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "52704fac10cd91684c751ee40c6530c37878cf95",
+  "prompts": {},
+  "sessions": {
+    "s_c63aaa8eb8080a": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f381f-3552-765a-b9fc-43c7f19564d8",
+        "model": "glm-5.2:cloud"
+      },
+      "human_author": "emmver <emmvereroudakis@gmail.com>"
+    }
+  }
+}

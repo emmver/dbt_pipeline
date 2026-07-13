@@ -1,0 +1,21 @@
+dbt/models/staging/stg_timesheets.sql
+  s_c63aaa8eb8080a::t_1ea67f649bb4a7 15-17
+docs/docglow-data.json
+  s_c63aaa8eb8080a::t_2caa40529ba47e 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "f5f0b6f7930df6b8a1f068f6e9fed45fdd7ea47b",
+  "prompts": {},
+  "sessions": {
+    "s_c63aaa8eb8080a": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f381f-3552-765a-b9fc-43c7f19564d8",
+        "model": "glm-5.2:cloud"
+      },
+      "human_author": "emmver <emmvereroudakis@gmail.com>"
+    }
+  }
+}

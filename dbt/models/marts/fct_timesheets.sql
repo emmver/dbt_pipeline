@@ -1,3 +1,11 @@
+-- fct_timesheets
+-- The clean timesheets fact mart: the accepted fact set from
+-- int_timesheets_validated joined to dim_employees / dim_projects. Pure join,
+-- no filters -- int already removed dangling FKs and single-source rejects, so
+-- the grain is clean (one row per timesheet_id). PK (timesheet_id) and FK
+-- (employee_id -> dim_employees, project_id -> dim_projects) tests run directly
+-- on the columns here with no `where` filtering.
+
 select
     ts.timesheet_id,
     ts.employee_id,

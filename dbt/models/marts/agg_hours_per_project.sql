@@ -1,3 +1,8 @@
+-- agg_hours_per_project
+-- Total hours per project from the clean fact mart. Reads ONLY from
+-- fct_timesheets (single source of accepted, enriched facts); no re-joins.
+-- project_id uniqueness (the aggregation grain) is asserted here.
+
 select
     project_id,
     project_name,

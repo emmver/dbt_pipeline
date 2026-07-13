@@ -1,0 +1,28 @@
+site/catalog.json
+  s_c63aaa8eb8080a::t_565c7968d210ac 1
+site/index.html
+  s_c63aaa8eb8080a::t_565c7968d210ac 1-250
+site/manifest.json
+  s_c63aaa8eb8080a::t_565c7968d210ac 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "b1b460e4ca44a2ce131b51410357db3fb680ab1d",
+  "prompts": {},
+  "humans": {
+    "h_8e87e22889a3a4": {
+      "author": "emmver <emmvereroudakis@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_c63aaa8eb8080a": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f381f-3552-765a-b9fc-43c7f19564d8",
+        "model": "glm-5.2:cloud"
+      },
+      "human_author": "emmver <emmvereroudakis@gmail.com>"
+    }
+  }
+}

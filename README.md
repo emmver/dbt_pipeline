@@ -12,6 +12,17 @@ four physical DuckDB schemas that mirror four dbt layers:
 - `main_intermediate` — the one cross-source model; filters dangling FKs → accepted fact set.
 - `main_marts` — clean, consumer-facing dims/fact/aggregate (contracts enforced).
 
+> 🌐 **Live documentation site:** <https://emmver.github.io/dbt_pipeline/>
+>
+> The interactive project docs are generated with
+> [**docglow**](https://github.com/docglow/docglow) (a next-generation dbt docs
+> generator with column-level lineage, an ERD view, and column insights) and
+> published to GitHub Pages from the `docs/` directory on the `main` branch.
+> The site includes the full lineage graph (with column-level edges), an ERD
+> diagram at `/erd`, per-model column docs, and all 19 tests. Regenerate
+> locally with `.venv/bin/docglow generate --project-dir dbt --target-dir target
+> --output-dir docs --enable-erd`.
+
 ## Repo map
 
 | Path | Purpose |
@@ -25,6 +36,7 @@ four physical DuckDB schemas that mirror four dbt layers:
 | `dbt/tests/generic/` | Custom tests: `hours_in_range`, `date_parseable`, `invalid_budget`, `unique_natural_key`. |
 | `dbt/docs/schema_design.md` | Design notes: ER overview, DB-vs-pipeline enforcement table, assumptions. |
 | `dbt/docs/er_diagram.mmd` | Mermaid ER diagram of `main_marts`. |
+| `docs/` | Generated **docglow** docs site (published to GitHub Pages at <https://emmver.github.io/dbt_pipeline/>). |
 | `warehouse/schema.sql` | Intended DDL (with FK / CHECK declared for design completeness). |
 | `warehouse/dbt_pipeline.duckdb` | The live DuckDB warehouse. |
 | `warehouse/outputs/` | Cleaned datasets + validation report (CSVs). |
@@ -372,6 +384,7 @@ accepted counts (331 / 35 / 40) every time.
 | Custom tests | `dbt/tests/generic/` (`hours_in_range`, `date_parseable`, `invalid_budget`, `unique_natural_key`) |
 | Source / model YAML | `dbt/models/staging/_sources.yml`, `_staging.yml`, `dbt/models/intermediate/_intermediate.yml`, `dbt/models/marts/_marts.yml` |
 | ER diagram (Mermaid) | `dbt/docs/er_diagram.mmd` |
+| **Live docs site (docglow)** | **<https://emmver.github.io/dbt_pipeline/>** (generated from `docs/` via [docglow](https://github.com/docglow/docglow)) |
 | Intended schema DDL | `warehouse/schema.sql` |
 | Design notes | `dbt/docs/schema_design.md` |
 | Cleaned fact dataset | `warehouse/outputs/fct_timesheets.csv` |

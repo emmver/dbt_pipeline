@@ -12,11 +12,9 @@ typed as (
     select
         employee_id,
         project_id,
-        coalesce(
-            try_cast(date as date),
-            try_strptime(date, '%d/%m/%Y')::date,
-            try_strptime(date, '%d-%b-%y')::date
-        ) as date,
+        -- raw date mixes three formats (dd/mm/yyyy, ISO yyyy-mm-dd, dd-Mon-yy);
+        -- try_strptime walks the format list and returns NULL if none match
+        try_strptime(date, ['%d/%m/%Y', '%Y-%m-%d', '%d-%b-%y'])::date as date,
         try_cast(hours as decimal(5, 2)) as hours,
         dup_rank
     from src

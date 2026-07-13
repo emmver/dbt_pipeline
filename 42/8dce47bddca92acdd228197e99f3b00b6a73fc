@@ -1,0 +1,29 @@
+README.md
+  s_c63aaa8eb8080a::t_850d95ff14161e 322-324
+dbt/models/marts/_marts.yml
+  s_c63aaa8eb8080a::t_35e0d60cc755ce 56
+dbt/models/staging/stg_timesheets.sql
+  s_c63aaa8eb8080a::t_a1cbe5a3820c0e 8,24-25,29,36
+dbt/models/staging/_staging.yml
+  s_c63aaa8eb8080a::t_375f80b432b47e 38
+dbt/models/staging/_sources.yml
+  s_c63aaa8eb8080a::t_97cfc32a975227 73
+docs/docglow-data.json
+  s_c63aaa8eb8080a::t_34eb5f43decd68 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "428dce47bddca92acdd228197e99f3b00b6a73fc",
+  "prompts": {},
+  "sessions": {
+    "s_c63aaa8eb8080a": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f381f-3552-765a-b9fc-43c7f19564d8",
+        "model": "glm-5.2:cloud"
+      },
+      "human_author": "emmver <emmvereroudakis@gmail.com>"
+    }
+  }
+}

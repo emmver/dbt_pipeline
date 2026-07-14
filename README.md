@@ -291,7 +291,7 @@ erDiagram
     dim_projects  ||--|| rpt_project_economics        : "economics"
 ```
 
-_Source: [`dbt/docs/er_diagram.mmd`](dbt/docs/er_diagram.mmd) � interactive ERD: [live docs site](https://emmver.github.io/dbt_pipeline/) � DDL: [`warehouse/schema.sql`](warehouse/schema.sql)_
+_Source: [`dbt/docs/er_diagram.mmd`](dbt/docs/er_diagram.mmd) · interactive ERD: [live docs site](https://emmver.github.io/dbt_pipeline/) · DDL: [`warehouse/schema.sql`](warehouse/schema.sql)_
 
 **Summary:** a classic star schema — two dimension→fact 1-to-many relationships (`dim_projects` / `dim_employees` → `fct_timesheets`) — plus three downstream rollup/report tables derived from the fact and `dim_projects` (`agg_hours_per_project`, `agg_hours_per_project_monthly`, `rpt_project_economics`).
 

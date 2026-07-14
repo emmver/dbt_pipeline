@@ -1,0 +1,19 @@
+README.md
+  s_c63aaa8eb8080a::t_f1da90aed5fdd7 294
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.13",
+  "base_commit_sha": "fd63c157b61504de5e0ae5f522e177902786bcdd",
+  "prompts": {},
+  "sessions": {
+    "s_c63aaa8eb8080a": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f381f-3552-765a-b9fc-43c7f19564d8",
+        "model": "glm-5.2:cloud"
+      },
+      "human_author": "emmver <emmvereroudakis@gmail.com>"
+    }
+  }
+}

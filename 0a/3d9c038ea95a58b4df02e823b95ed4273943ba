@@ -1,0 +1,24 @@
+dbt/models/marts/rpt_project_economics.sql
+  s_c63aaa8eb8080a::t_5c6211cdb09ccd 24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.13",
+  "base_commit_sha": "0a3d9c038ea95a58b4df02e823b95ed4273943ba",
+  "prompts": {},
+  "humans": {
+    "h_8e87e22889a3a4": {
+      "author": "emmver <emmvereroudakis@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_c63aaa8eb8080a": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f381f-3552-765a-b9fc-43c7f19564d8",
+        "model": "glm-5.2:cloud"
+      },
+      "human_author": "emmver <emmvereroudakis@gmail.com>"
+    }
+  }
+}

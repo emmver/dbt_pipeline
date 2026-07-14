@@ -1,0 +1,27 @@
+README.md
+  s_c63aaa8eb8080a::t_472a964ddc4122 294-295
+  s_c63aaa8eb8080a::t_2f4751f45c43e4 108-145,148
+  s_c63aaa8eb8080a::t_05008b4c366200 235-237,296
+  s_c63aaa8eb8080a::t_9f4a79c7f83749 149
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.13",
+  "base_commit_sha": "9993fc712a1d52df939199f066e8e6eea8dd34a1",
+  "prompts": {},
+  "humans": {
+    "h_8e87e22889a3a4": {
+      "author": "emmver <emmvereroudakis@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_c63aaa8eb8080a": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f381f-3552-765a-b9fc-43c7f19564d8",
+        "model": "glm-5.2:cloud"
+      },
+      "human_author": "emmver <emmvereroudakis@gmail.com>"
+    }
+  }
+}
